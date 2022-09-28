@@ -11,7 +11,7 @@ a {
 #Light{
 	position: relative;
 	top:15px;
-	left:170px;
+	margin-left: 12.5%;/*170px*/
 	width:50%;
 	/*top: 255px;
 	left:  335px;*/
@@ -19,7 +19,7 @@ a {
 
 #LightStick{
 	position: absolute;
-	left:48.5%;
+	left:43%;
 	width:4%;
 }
 
@@ -55,9 +55,7 @@ a {
 	/*margin-top:  400px;*/
 }
 
-#lightBlock{
-	width: 100%;
-}
+
 /* light movement   */
 #Light {
     transform-origin:  64.5% 13%;/* x ytransform-origin: 67% 21%;  lower x is to the left higher y to the top*/

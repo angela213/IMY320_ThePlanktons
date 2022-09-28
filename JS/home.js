@@ -11,13 +11,11 @@ function resetLogo(){
     document.getElementById("logoGif").style.display="none";
 }
 
-
-
 function Tertius() {
   document.getElementById("headingTeamMember").innerHTML = "Tertius";
   document.getElementById("paragraphTeamMember").innerHTML = "Tertius is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ;alskjf;laskdjflaskjdlsakjfdkjkdjffffffffffffffffflskdjflaksjdflaksdjflaksdfasdfasdfasasdfakjsdfkahdfklajdfhlkajsdfh ajklsdfhlakd akljdhfalk sjdfha askjdfhklasjdfh ahklsjdfhlak haskdjfhaksjdfhakjd aksdjfhskj jdjdjd kajsdfhlakjsdfhklasjdfhal kajsdfhasdf";
   document.getElementById("Tertius").src="../Media/TertiusPicColour.png";
-  document.getElementById("Tertius").style.width="149px";
+  //document.getElementById("Tertius").style.width="149px";
 
   document.getElementById("Francois").src="../Media/FrancoisPic.png";
   document.getElementById("Angela").src="../Media/AngelaPic.png";
@@ -59,7 +57,7 @@ function James() {
   document.getElementById("headingTeamMember").innerHTML = "James";
   document.getElementById("paragraphTeamMember").innerHTML = "James is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ;alskjf;laskdjflaskjdlsakjfdkjkdjffffffffffffffffflskdjflaksjdflaksdjflaksdfasdfasdfasasdfakjsdfkahdfklajdfhlkajsdfh ajklsdfhlakd akljdhfalk sjdfha askjdfhklasjdfh ahklsjdfhlak haskdjfhaksjdfhakjd aksdjfhskj jdjdjd kajsdfhlakjsdfhklasjdfhal kajsdfhasdf";
   document.getElementById("James").src="../Media/JamesPicColour.png";
-  document.getElementById("James").style.width="148px";
+  //document.getElementById("James").style.width="148px";
 
   document.getElementById("Tertius").src="../Media/TertiusPic.png";
   document.getElementById("Francois").src="../Media/FrancoisPic.png";

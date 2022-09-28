@@ -1,0 +1,30 @@
+body {
+	background-color: #2d344D;
+}
+#logoBackDrop{
+	position: fixed;
+	z-index: 1;
+	right:0;
+	top:40px;
+	padding:10px;
+}
+#logo #logoPic, #logoGif{
+	position: fixed;
+	z-index: 8;
+	right:0;
+	padding:10px;
+}
+content{
+	color: #E1EDF4;
+	position: absolute;
+	left: 400px; 
+	top:40px;
+	padding: 100px;
+	padding-top: 50px;
+	font-family: "Tw Cen MT";
+	font-size: 17px;
+  	
+}
+h1, h2, h3{
+  font-family: "Century Gothic";
+}

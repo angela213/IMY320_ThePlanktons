@@ -1,0 +1,75 @@
+a {
+  color: #CC0029;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#lightDiv{
+	margin-top: 0;
+ 	margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    padding: 0;
+}
+
+#lightDiv img{
+	display: block;
+}
+
+#Light{
+	position: absolute;
+	top: 255px;
+	left:  335px;
+}
+#lightBeam{
+	position: absolute;
+	top: 255px;
+	left:  245px;
+	opacity: 0.4;
+	z-index: 1;
+}
+
+.portraits img{
+  padding: 5px;
+  width: 150px;
+}
+
+.portraits{
+	display: inline;
+	margin: 10px;
+	z-index: 5;
+	/*filter: brightness(60%);*/
+}
+
+#meetTeam{
+	margin-top:  205px;
+    margin-left: 200px;
+    margin-right: auto;
+    width: 90%;
+    /*width: 950px;*/
+    position: absolute;
+	z-index: 8;
+}
+#Francois{
+	 width: 160px;
+}
+#Jay{
+	 width: 160px;
+}
+
+/*#Tertius{
+	 width: 160px;
+}*/
+.teamParagraph{
+	margin-top: 30%;
+	/*margin-top:  400px;*/
+}
+
+#lightBlock{
+	width: 100%;
+}
+/* light movement   */
+#Light {
+    transform-origin:  64.5% 13%;/* x ytransform-origin: 67% 21%;  lower x is to the left higher y to the top*/
+    touch-action: none;
+}

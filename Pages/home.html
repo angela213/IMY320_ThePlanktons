@@ -2,12 +2,29 @@
 <html lang="en">
 	<head>
 	  <title>Home page</title>
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="../CSS/home.css">
 	  <link rel="stylesheet" href="../CSS/all.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 
 	<body>
 		<nav>
+			    <div class="col-sm-4">
+                    <nav>
+                        <div class="circle">
+                            <a href="../Pages/home.html">
+                                <div id="home"><text>Home</text></div>
+                            </a>
+                            <a href="../Pages/ContactUs.html">
+                                <div id="contactUsNav"><text>Contact Us</text></div>
+                            </a>
+                            <a href="../Pages/projects.html">
+                                <div id="projects"><text>Projects</text></div>
+                            </a>    
+                        </div>
+                    </nav>
+                </div>
 
 		</nav>
 		<div id="logo">
@@ -16,6 +33,7 @@
 			<img  id="logoGif" onmouseover="backflip(this)" src="../Media/backflip2.gif" alt="logoBackFlip">
 
 		</div>
+		<div class="page">
 		<content>
 
 			<h1>About us</h1>
@@ -61,6 +79,8 @@
 		
 
 	</content>
+   </div>
 	</body>
 	<script src="../JS/home.js"></script>
+	<script type="text/javascript" src="../JS/navbar.js"></script>
 </html>

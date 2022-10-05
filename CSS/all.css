@@ -1,6 +1,15 @@
 body {
 	background-color: #0D111C;
 }
+/*@font-face{
+  font-family: Inter;
+  src: url(../Media/Fonts/Inter/Inter-VariableFont_slnt,wght.ttf);
+}
+
+@font-face{
+  font-family: Nunito Sans;
+  src: url(../Media/Fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+}*/
 #logoBackDrop{
 	position: fixed;
 	z-index: 1;
@@ -8,6 +17,7 @@ body {
 	top:40px;
 	padding:10px;
 }
+
 #logo #logoPic, #logoGif{
 	position: fixed;
 	z-index: 8;
@@ -24,11 +34,11 @@ body {
 	padding-top: 50px;
 	font-family: "Tw Cen MT";
 	font-size: 17px;
-  	
 }*/
 h1, h2, h3{
   font-family: "Century Gothic";
 }
+
 .page{
 	color: #E1EDF4;
 	position: absolute;
@@ -45,7 +55,7 @@ h1, h2, h3{
 
 /*nav*/
 .circle{
-    background: white;
+    background: #E1EDF4;
     border-radius: 50%;
     width: 140%;
     height: 140%;
@@ -62,8 +72,6 @@ body{
     line-height: 1.42857143;
     margin: 0;
 }
-
-
 
 @keyframes rotate{
     from{ transform: rotate(-360deg); }

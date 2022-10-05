@@ -1,5 +1,13 @@
 //document.addEventListener("DOMContentLoaded", function() {
 
+
+setTimeout(getHomePage, 7000);//starts counting from loaded
+function getHomePage(){
+  console.log("hi");
+    document.getElementById("loading").style.display="none";
+    window.location.href = "../Pages/home.html";
+}
+
 document.getElementById("logoGif").style.display="none";
 function backflip(e){
     e.style.display="none";

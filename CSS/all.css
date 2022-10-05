@@ -1,0 +1,160 @@
+body {
+	background-color: #0D111C;
+}
+/*@font-face{
+  font-family: Inter;
+  src: url(../Media/Fonts/Inter/Inter-VariableFont_slnt,wght.ttf);
+}
+
+@font-face{
+  font-family: Nunito Sans;
+  src: url(../Media/Fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+}*/
+#logoBackDrop{
+	position: fixed;
+	z-index: 1;
+	right:0;
+	top:40px;
+	padding:10px;
+}
+
+#logo #logoPic, #logoGif{
+	position: fixed;
+	z-index: 8;
+	right:0;
+	padding:10px;
+}
+/*content{
+	color: #E1EDF4;
+	position: absolute;
+	left: 20%;
+	top:30px;
+	
+	padding: 100px;
+	padding-top: 50px;
+	font-family: "Tw Cen MT";
+	font-size: 17px;
+}*/
+h1, h2, h3{
+  font-family: "Century Gothic";
+}
+
+.page{
+	color: #E1EDF4;
+	position: absolute;
+	left: 20%;
+	top:30px;
+	/*left: 400px; 
+	top:40px;*/
+	padding: 100px;
+	padding-top: 50px;
+	font-family: "Tw Cen MT";
+	font-size: 17px;
+}
+
+/*nav*/
+.circle{
+    background: #E1EDF4;
+    border-radius: 50%;
+    width: 140%;
+    height: 140%;
+    position: relative;
+    bottom: 160px;
+    right: 100%;
+    
+}
+body{
+    background-color: #0E131F;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+a{
+    text-decoration: none;
+}
+
+/* home */
+#home{
+    background: #FF0035;
+    border-radius: 50%;
+    position: relative;
+    top: 26%;
+    left: 87%;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    
+}
+
+/* #home:hover{
+    background: #FF0035;
+    border-radius: 50%;
+    position: relative;
+    top: 26%;
+    left: 87%;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    border-radius: 50%;
+} */
+
+#home text{
+    position: relative;
+    top: 40%;
+    color: white;
+}
+
+/* about */
+#ContactUsNav{
+    background: #FF0035;
+    border-radius: 50%;
+    position: relative;
+    top: 40%;
+    left: 92%;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+}
+
+#contactUsNav text{
+    position: relative;
+    top: 40%;
+    color: white;
+}
+
+/* projects */
+#projects{
+    background: #FF0035;
+    border-radius: 50%;
+    position: relative;
+    top: 54%;
+    left: 87%;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+}
+
+#projects text{
+    position: relative;
+    top: 40%;
+    color: white;
+}
+nav{
+	position: fixed;
+	height: 100%;
+	width: 30%;
+	top:0;
+	z-index:10;
+}

@@ -1,0 +1,167 @@
+
+
+
+body{
+    background-color: #0E131F;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+}
+
+.circle{
+    background: white;
+    border-radius: 100%;
+    width: 190%;
+    height: 120%;
+    position: relative;
+    bottom: 100px;
+    right: 155%;
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/* home */
+#home{
+    background: #FF0035;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 84%;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    line-height: 95px;
+    
+}
+
+#home:hover{
+    cursor: pointer;
+
+}
+
+/* #home:hover{
+    background: #FF0035;
+    border-radius: 50%;
+    position: relative;
+    top: 26%;
+    left: 87%;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    border-radius: 50%;
+} */
+
+
+/* contactUsNav */
+#contactUsNav{
+    background: #FF0035;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 92%;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    line-height: 95px;
+}
+#contactUsNav:hover{
+    cursor: pointer;
+}
+
+
+/* projects */
+#projects{
+    background: #FF0035;
+    border-radius: 50%;
+    position: absolute;
+    top: 75%;
+    left: 84%;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    line-height: 95px;
+}
+#projects:hover{
+    cursor: pointer;
+}
+
+
+/* #projects:hover{
+    background: #FF0035;
+    border-radius: 50%;
+    position: relative;
+    top: 54%;
+    left: 87%;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes resize{
+    0%{
+        width: 140px;
+        height: 100px;
+    }
+    50%{
+        width: 170px;
+        height: 120px;
+    }
+    100%{
+        width: 180px;
+        height: 150px;
+    }
+} */
+
+
+#Message{
+    top: 300px;
+    margin: 0 auto;
+}
+
+#Message a{
+    color: #FF0035;
+}
+
+#Message button{
+    background-color: #FF0035;
+}
+
+#ContactUs{
+    top: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#ContactUs a{
+    color: #FF0035;
+}
+
+
+
+
+/* center which one you clicked on with animation */
+
+
+
+

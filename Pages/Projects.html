@@ -4,17 +4,37 @@
         <!--<link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet" />-->
         <link href="../CSS/projects.css" rel="stylesheet" />
+        <link href="../CSS/all.css" rel="stylesheet" />
         <title>Projects - The Planktons</title>
+        
     </head>
     <body>
-
-        <div class="container">
-            <div class="v71_18">
-                    <span class="v71_19">Logo</span>
-                    <div class="v71_20">
-                        
-                    </div>
+        <nav>
+              <div class="col-sm-4">
+                    <nav>
+                        <div class="circle">
+                            <a href="../Pages/home.html">
+                                <div id="home"><text>Home</text></div>
+                            </a>
+                            <a href="../Pages/ContactUs.html">
+                                <div id="contactUsNav"><text>Contact Us</text></div>
+                            </a>
+                            <a href="../Pages/projects.html">
+                                <div id="projects"><text>Projects</text></div>
+                            </a>    
+                        </div>
+                    </nav>
                 </div>
+        </nav>
+     <div id="logo">
+            <img  id="logoBackDrop" src="../Media/logoBackDrop.png" alt="logoBackDrop">
+            <img  id="logoPic" onmouseover="backflip(this)" src="../Media/logoPic.png" alt="logoPic">
+            <img  id="logoGif" onmouseover="backflip(this)" src="../Media/backflip2.gif" alt="logoBackFlip">
+
+        </div>
+        <div class="page">
+        <div class="container">
+            
             <!--<div class="v58_3">
                 
             </div>
@@ -164,6 +184,10 @@
                 <br />
             </div>
         </div>
-        <script type="text/javascript" src="../JS/projects.js"></script>
+    </div>
+
     </body>
+    <script type="text/javascript" src="../JS/projects.js"></script>
+        <script type="text/javascript" src="../JS/navbar.js"></script>
+        <script src="../JS/home.js"></script>
 </html>

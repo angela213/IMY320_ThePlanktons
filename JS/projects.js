@@ -1,6 +1,65 @@
 var clickAllowed = true;
-var preferredTop = 367;
-var preferredLeft = 488.5;
+var preferredTop = 192;
+var preferredLeft = 448.5;
+var cip;
+function sleep(ms) {
+  	return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function fadeIn(){
+	await sleep(3000);
+	document.body.style.overflow = "inherit";
+	document.body.firstElementChild.remove();
+  	const projectPic = document.getElementsByClassName("projectLink")[0];
+
+  	const div = document.createElement("div");
+  	div.classList.add("video");
+  	const video = document.createElement("video");
+  	video.classList.add("thevideo");
+  	video.loop = true;
+  	video.muted = true;
+  	video.preload = "auto";
+  	const source = document.createElement("source");
+  	var pNum = parseInt(projectPic.id.replace("Project_", ""));
+  	switch(pNum){
+  		case 1:
+  			source.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 2:
+  			source.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 3:
+  			source.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 4:
+  			source.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 5:
+  			source.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 6:
+  			source.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 7:
+  			source.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 8:
+  			source.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 9:
+  			source.style.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 10:
+  			source.style.src = "../Media/Videos/rick.mp4";
+  			break;
+  	}
+  	source.type = "video/mp4";
+  	video.append(source);
+  	div.append(video);
+  	//projectPic.firstElementChild.firstElementChild.remove();
+  	projectPic.firstElementChild.append(div);
+  	cip = $(".video").hover( hoverVideo, hideVideo );
+}
 
 function projectChangePage(pageNum){
 	if(clickAllowed){
@@ -40,6 +99,7 @@ function projectChangePage(pageNum){
 		// these are relative to the viewport, i.e. the window
 		var vTop = viewportOffset.top;
 		var vLeft = viewportOffset.left;
+		console.log("beforeTop: " + vTop + " beforeLeft: " + vLeft);
 		if(vTop > preferredTop){
 			up = true;
 		}else{
@@ -103,6 +163,7 @@ function projectChangePage(pageNum){
 		//root.style.setProperty('--top', preferredTop + tDiff + "px");
 		//root.style.setProperty('--left', preferredLeft + lDiff + "px");
 		//projectPic.firstElementChild.style.position = "absolute";
+
 		projectPic.firstElementChild.style.top = bTop;
 		projectPic.firstElementChild.style.left = bLeft;
 
@@ -119,9 +180,10 @@ function projectChangePage(pageNum){
 	async function waitForAnim(){
 		await sleep(3500);
 		console.log("change page");
-		window.location.href = "./projects.html";
+		window.location.href = "./projectPage.html";
+		
 	}
-
+	/*
 	async function moveAnim(vTop, vLeft, projectPic, pageNum){
 		await sleep(3000);
 		var top = window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("top");
@@ -206,7 +268,7 @@ function projectChangePage(pageNum){
 			await sleep(1);
 
 		}*/
-
+		/*
 		while(true){
 			var viewportOffset = projectPic.firstElementChild.getBoundingClientRect();
 			// these are relative to the viewport, i.e. the window
@@ -254,9 +316,16 @@ function projectChangePage(pageNum){
 		//var top = window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("top");
 		//var left = window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("left");
 	}
+	*/
+	
 
-	function sleep(ms) {
-  		return new Promise(resolve => setTimeout(resolve, ms));
-	}
+}
 
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
 }

@@ -21,21 +21,27 @@ function ChangeNav(clicked){
                 $("#contactUsNav").animate({top: '75%', left:'84%'}, 400, "linear");
                 $("#projects").animate({top: '90%', left:'60%'}, 200, "linear").animate({top: '5%', left:'78%'}, 0, "linear")
                 .animate({top: '15%', left:'84%'}, 200, "linear");
-                window.location.replace("home.html");
+                setTimeout(function(){
+                    window.location.assign("home.html");
+                  }, 500);
             }
             else if(clicked == "contactUsNav"){
                 $("#contactUsNav").animate({top: '45%', left:'92%'}, 400, "linear");
                 $("#projects").animate({top: '75%', left:'84%'}, 400, "linear");
                 $("#home").animate({top: '90%', left:'60%'}, 200, "linear").animate({top: '5%', left:'78%'}, 0, "linear")
                 .animate({top: '15%', left:'84%'}, 200, "linear");
-                window.location.replace("ContactUs.html");
+                setTimeout(function(){
+                    window.location.assign("ContactUs.html");
+                  }, 500);
             }
             else if(clicked=="projects"){
                 $("#projects").animate({top: '45%', left:'92%'}, 400, "linear");
                 $("#home").animate({top: '75%', left:'84%'}, 400, "linear");
                 $("#contactUsNav").animate({top: '90%', left:'60%'}, 200, "linear").animate({top: '5%', left:'78%'}, 0, "linear")
                 .animate({top: '15%', left:'84%'}, 200, "linear");
-                window.location.replace("Projects.html");
+                setTimeout(function(){
+                    window.location.assign("Projects.html");
+                  }, 500);
             }
         }
         else if(math == 75){
@@ -45,19 +51,25 @@ function ChangeNav(clicked){
                 $("#projects").animate({top: '15%', left:'84%'}, 400, "linear");
                 $("#contactUsNav").animate({top: '5%', left:'60%'}, 200, "linear").animate({top: '90%', left:'78%'}, 0, "linear")
                 .animate({top: '75%', left:'84%'}, 200, "linear");
-                window.location.replace("home.html");
+                setTimeout(function(){
+                    window.location.assign("home.html");
+                  }, 500);
             }else if(clicked == "contactUsNav"){
                 $("#contactUsNav").animate({top: '45%', left:'92%'}, 400, "linear");
                 $("#home").animate({top: '15%', left:'84%'}, 400, "linear");
                 $("#projects").animate({top: '5%', left:'60%'}, 200, "linear").animate({top: '90%', left:'78%'}, 0, "linear")
                 .animate({top: '75%', left:'84%'}, 200, "linear");
-                window.location.replace("ContactUs.html");
+                setTimeout(function(){
+                    window.location.assign("ContactUs.html");
+                  }, 500);
             }else if(clicked == "projects"){
                 $("#projects").animate({top: '45%', left:'92%'}, 400, "linear");
                 $("#contactUsNav").animate({top: '15%', left:'84%'}, 400, "linear");
                 $("#home").animate({top: '5%', left:'60%'}, 200, "linear").animate({top: '90%', left:'78%'}, 0, "linear")
                 .animate({top: '75%', left:'84%'}, 200, "linear");
-                window.location.replace("Projects.html");
+                setTimeout(function(){
+                    window.location.assign("Projects.html");
+                  }, 500);
             }
             
         }
@@ -86,7 +98,7 @@ $(document).ready(function(){
     });
     $("#home").click(function(){
         //alert("You clicked home!");
-        //window.location.replace("index.html");
+        //window.location.assign("index.html");
         ChangeNav("home");
     });
 
@@ -101,7 +113,7 @@ $(document).ready(function(){
     });
     $("#contactUsNav").click(function(){
         //alert("You clicked home!");
-        //window.location.replace("index.html");
+        //window.location.assign("index.html");
         ChangeNav("contactUsNav");
     });
 
@@ -116,7 +128,7 @@ $(document).ready(function(){
     });
     $("#projects").click(function(){
         //alert("You clicked home!");
-        //window.location.replace("index.html");
+        //window.location.assign("index.html");
         ChangeNav("projects");
     });
 

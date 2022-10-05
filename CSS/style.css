@@ -1,106 +1,3 @@
-
-
-
-body{
-    background-color: #0E131F;
-    color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    margin: 0;
-}
-
-.circle{
-    background: white;
-    border-radius: 50%;
-    width: 140%;
-    height: 140%;
-    position: relative;
-    bottom: 160px;
-    right: 100%;
-    
-}
-
-@keyframes rotate{
-    from{ transform: rotate(-360deg); }
-    to{ transform: rotate(360deg); }
-}
-
-a{
-    text-decoration: none;
-}
-
-/* home */
-#home{
-    background: #FF0035;
-    border-radius: 50%;
-    position: relative;
-    top: 26%;
-    left: 87%;
-    width: 140px;
-    height: 100px;
-    text-align: center;
-    
-}
-
-/* #home:hover{
-    background: #FF0035;
-    border-radius: 50%;
-    position: relative;
-    top: 26%;
-    left: 87%;
-    width: 140px;
-    height: 100px;
-    text-align: center;
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    border-radius: 50%;
-} */
-
-#home text{
-    position: relative;
-    top: 40%;
-    color: white;
-}
-
-/* about */
-#about{
-    background: #FF0035;
-    border-radius: 50%;
-    position: relative;
-    top: 40%;
-    left: 92%;
-    width: 140px;
-    height: 100px;
-    text-align: center;
-}
-
-#about text{
-    position: relative;
-    top: 40%;
-    color: white;
-}
-
-/* projects */
-#projects{
-    background: #FF0035;
-    border-radius: 50%;
-    position: relative;
-    top: 54%;
-    left: 87%;
-    width: 140px;
-    height: 100px;
-    text-align: center;
-}
-
-#projects text{
-    position: relative;
-    top: 40%;
-    color: white;
-}
-
 #Message{
     top: 300px;
     margin: 0 auto;
@@ -122,6 +19,10 @@ a{
 
 #ContactUs a{
     color: #FF0035;
+}
+.container-fluid{
+    position: relative;
+    left:25%;
 }
 
 

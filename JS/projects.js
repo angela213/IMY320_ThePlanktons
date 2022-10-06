@@ -1,6 +1,6 @@
 var clickAllowed = true;
-var preferredTop = 192;
-var preferredLeft = 448.5;
+var preferredTop = 20;
+var preferredLeft = 20;
 var cip;
 function sleep(ms) {
   	return new Promise(resolve => setTimeout(resolve, ms));
@@ -96,9 +96,22 @@ function projectChangePage(pageNum){
 		var left = window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("left");
 		var up;
 		var viewportOffset = projectPic.firstElementChild.getBoundingClientRect();
+
+		const screenSize = document.getElementsByClassName("screenSize")[0];
+		var viewportOffset2 = screenSize.getBoundingClientRect();
+		preferredTop = screenSize.firstElementChild.getBoundingClientRect().top / viewportOffset2.height * 100;
+		preferredLeft = screenSize.firstElementChild.getBoundingClientRect().left / viewportOffset2.width * 100;
+		console.log("prefferedTop: " + preferredTop + " preferredLeft: " + preferredLeft);
 		// these are relative to the viewport, i.e. the window
-		var vTop = viewportOffset.top;
-		var vLeft = viewportOffset.left;
+		var vTop = bTop = viewportOffset.top / viewportOffset2.height * 100;
+		var vLeft = bLeft = viewportOffset.left / viewportOffset2.width * 100;
+		projectPic.firstElementChild.style.left = vLeft + "%";
+		projectPic.firstElementChild.style.top = vTop + "%";
+		projectPic.firstElementChild.style.position = "fixed";
+
+		//root.style.setProperty('--top', window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("top"));
+		//root.style.setProperty('--left', window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("left"));
+		console.log("height: " + viewportOffset2.height);
 		console.log("beforeTop: " + vTop + " beforeLeft: " + vLeft);
 		if(vTop > preferredTop){
 			up = true;
@@ -115,22 +128,26 @@ function projectChangePage(pageNum){
 		var topDone, leftDone = false;
 		while(true){
 			var viewportOffset = projectPic.firstElementChild.getBoundingClientRect();
+			//var viewportOffset2 = projectPic.parentElement.getBoundingClientRect();
 			// these are relative to the viewport, i.e. the window
-			var vTop = viewportOffset.top;
-			var vLeft = viewportOffset.left;
+			var vTop = viewportOffset.top / viewportOffset2.height * 100;
+			var vLeft = viewportOffset.left / viewportOffset2.width * 100;
 			i++;
 			if(i == 10000){
+				var root = document.querySelector(":root");
+				root.style.setProperty('--top', window.getComputedStyle(screenSize.firstElementChild).getPropertyValue("top"));
+				root.style.setProperty('--left', window.getComputedStyle(screenSize.firstElementChild).getPropertyValue("left"));
 				break;
 			}
 			if(left){
 				if(vLeft < preferredLeft){
-					projectPic.firstElementChild.style.left = (parseInt(window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("left").replace(/px/,"")) + 1) + "px";
+					projectPic.firstElementChild.style.left = (parseInt(window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("left").replace(/%/,"")) + 0.1) + "%";
 				}else{
 					leftDone = true;
 				}
 			}else{
 				if(vLeft > preferredLeft){
-					projectPic.firstElementChild.style.left = (parseInt(window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("left").replace(/px/,"")) - 1) + "px";
+					projectPic.firstElementChild.style.left = (parseInt(window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("left").replace(/%/,"")) - 0.1) + "%";
 				}else{
 					leftDone = true;
 				}
@@ -139,13 +156,13 @@ function projectChangePage(pageNum){
 			if(up){
 				if(vTop > preferredTop){
 					console.log("move");
-					projectPic.firstElementChild.style.top = (parseInt(window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("top").replace(/px/,"")) - 1) + "px";
+					projectPic.firstElementChild.style.top = (parseInt(window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("top").replace(/%/,"")) - 0.1) + "%";
 				}else{
 					topDone = true;
 				}
 			}else{
 				if(vTop < preferredTop){
-					projectPic.firstElementChild.style.top = (parseInt(window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("top").replace(/px/,"")) + 1) + "px";
+					projectPic.firstElementChild.style.top = (parseInt(window.getComputedStyle(projectPic.firstElementChild).getPropertyValue("top").replace(/%/,"")) + 0.1) + "%";
 				}else{
 					topDone = true;
 				}
@@ -158,14 +175,17 @@ function projectChangePage(pageNum){
 				break;
 			}
 		}
+		var root = document.querySelector(":root");
+				root.style.setProperty('--top', window.getComputedStyle(screenSize.firstElementChild).getPropertyValue("top"));
+				root.style.setProperty('--left', window.getComputedStyle(screenSize.firstElementChild).getPropertyValue("left"));
 
 		//var root = document.querySelector(":root");
 		//root.style.setProperty('--top', preferredTop + tDiff + "px");
 		//root.style.setProperty('--left', preferredLeft + lDiff + "px");
 		//projectPic.firstElementChild.style.position = "absolute";
 
-		projectPic.firstElementChild.style.top = bTop;
-		projectPic.firstElementChild.style.left = bLeft;
+		projectPic.firstElementChild.style.top = bTop + "%";
+		projectPic.firstElementChild.style.left = bLeft + "%";
 
 		projectPic.firstElementChild.style.zIndex = 2;
 		o.classList.add("overlay");

@@ -14,7 +14,7 @@ function ChangeNav(clicked){
 
         console.log("Math: " + math);
 
-        if(math == 15){
+        if(math == 18){
             console.log("1");
             if(clicked == "home"){
                 $("#home").animate({top: '45%', left:'92%'}, 400, "linear");
@@ -44,7 +44,7 @@ function ChangeNav(clicked){
                   }, 500);
             }
         }
-        else if(math == 75){
+        else if(math == 90){
             console.log("2");
             if(clicked == "home"){
                 $("#home").animate({top: '45%', left:'92%'}, 400, "linear");
@@ -72,6 +72,12 @@ function ChangeNav(clicked){
                   }, 500);
             }
             
+        }else if(math == 54){
+            if(clicked == "projects"){
+                if("individualProj".length > 0){
+                    window.location.assign("Projects.html");
+                }
+            }
         }
 }
 

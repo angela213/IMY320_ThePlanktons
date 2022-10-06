@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+
+.screenSize{
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+}
+
+.projPos{
+  position: fixed;
+  top: 16.5%;
+  left: 29.8%;
+}
 /*html{
   height: 100%;
   margin: 0;
@@ -67,7 +79,7 @@ body {
   background-position: center center;
   background-size: cover;
   opacity: 1;*/
-  position: relative;
+  /*position: relative;
   top: 127px;
   left: 468px;
   /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
@@ -76,6 +88,7 @@ body {
 
 .projectRow{
   height: 506px;
+  width:  58%;
 }
 
 
@@ -102,8 +115,8 @@ a.projectLink {
 }
 
 .project {
-  width: 657px;
-  /*height: 506px;*/
+  width: 100%;
+  height: 100%;
   background-color: rgb(13, 17, 28);
   /*background: url("../images/v58_8.png");
   background-repeat: no-repeat;
@@ -116,11 +129,11 @@ a.projectLink {
   /*overflow: hidden;*/
 }
 .projectRight {
-  width: 657px;
-  height: 506px;
+  width: 100%;
+  height: 100%;
   position: relative;
-  top: -506px;
-  left: 685px;
+  top: -104%;
+  left: 100%;
   /*background: url("../images/v58_8.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -164,9 +177,9 @@ a.projectLink {
 }
 .projectImg {
   z-index: 2;
-  width: 616px;
-  height: 323px;
-  background: rgba(217,217,217,1);
+  width: 500px;
+  height: 250px;
+  /*background: rgba(217,217,217,1);
   /*opacity: 1;*/
   position: relative;
   top: 30px;
@@ -233,12 +246,12 @@ a.projectLink {
   text-align: left;*/
 }
 .projectTitle {
-  width: 558px;
+  /*width: 558px;
   color: rgba(255,255,255,1);
   /*position: relative;
   top: 0px;
   left: 0px;*/
-  font-family: Inter;
+  /*font-family: Inter;
   font-weight: Bold;
   font-size: 40px;
   margin: 0px;
@@ -246,22 +259,22 @@ a.projectLink {
   text-align: left;*/
 }
 .projectDescrip{
-  color: rgba(225,237,244,1);
+  /*color: rgba(225,237,244,1);*/
   position: relative;
   top: 50px;
-  font-family: Nunito Sans;
+  /*font-family: Nunito Sans;
   font-weight:  Bold;
-  font-size:  24px;
+  font-size:  24px;*/
   text-align: center;
   margin: auto;
-  width: 600px;
+  /*width: 600px;*/
   padding-bottom: 50px;
 }
 
 .headerContainer{
-  position: relative;
+  /*position: relative;
   top: 114px;
-  left: 428px;
+  left: 428px;*/
 
 }
 .v71_18 {

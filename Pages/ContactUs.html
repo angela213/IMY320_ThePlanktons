@@ -1,18 +1,28 @@
-<htm>
+<html>
     <head>
-        <title>About Us</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="../Media/Images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../Media/Images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Media/Images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="../Media/Images/favicon_io/site.webmanifest">
+        <title>Contact Us</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="../CSS/all.css" rel="stylesheet" />
         <link rel="stylesheet" href="../CSS/NavStyle.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body> 
+        <div id="logo">
+            <img  id="logoBackDrop" src="../Media/logoBackDrop.png" alt="logoBackDrop">
+            <img  id="logoPic" onmouseover="backflip(this)" src="../Media/logoPic.png" alt="logoPic">
+            <img  id="logoGif" onmouseover="backflip(this)" src="../Media/backflip2.gif" alt="logoBackFlip">
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
                     <nav>
                         <div class="circle">
                                 <div id="home">Home</div>
-                                <div id="contactUsNav">About Us</div>
+                                <div id="contactUsNav">Contact Us</div>
                                 <div id="projects">Projects</div> 
                         </div>
                     </nav>
@@ -43,4 +53,5 @@
         </div> 
     </body>
     <script type="text/javascript" src="../JS/navbar.js"></script>
-</htm>
+     <script type="text/javascript" src="../JS/stickman.js"></script>
+</html>

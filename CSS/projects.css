@@ -51,11 +51,11 @@ body {
 
 .title {
   /*width: 558px;*/
-  color: rgba(255,255,255,1);
+  /*color: rgba(255,255,255,1);
   /*position: relative;
   top: 114px;
   left: 428px;*/
-  font-family: Inter;
+  /*font-family: Inter;
   font-weight: Bold;
   font-size: 40px;
   margin: 0px;
@@ -63,11 +63,11 @@ body {
   text-align: left;*/
 }
 .subtitle {
-  width: 560px;
+  /*width: 560px;
   color: rgba(225,237,244,1);
   position: relative;
   /*top: 185px;*/
-  left: 41px;
+  /*left: 41px;
   font-family: Nunito Sans;
   font-weight: Bold;
   font-size: 24px;
@@ -83,7 +83,7 @@ body {
   background-position: center center;
   background-size: cover;
   opacity: 1;*/
-  position: relative;
+  /*position: relative;
   top: 127px;
   left: 468px;
   /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
@@ -91,7 +91,20 @@ body {
 }
 
 .projectRow{
-  height: 506px;
+  height: 410px;
+  width:  110%;
+}
+
+.screenSize{
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+}
+
+.projPos{
+  position: fixed;
+  top: 24%;
+  left: 29.6%;
 }
 
 
@@ -118,8 +131,8 @@ a.projectLink {
 }
 
 .project {
-  width: 657px;
-  height: 506px;
+  width: 100%;
+  height: 100%;
   background-color: rgb(13, 17, 28);
   /*background: url("../images/v58_8.png");
   background-repeat: no-repeat;
@@ -132,11 +145,11 @@ a.projectLink {
   /*overflow: hidden;*/
 }
 .projectRight {
-  width: 657px;
-  height: 506px;
+  width: 100%;
+  height: 100%;
   position: relative;
-  top: -506px;
-  left: 685px;
+  top: -104%;
+  left: 100%;
   /*background: url("../images/v58_8.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -179,9 +192,9 @@ a.projectLink {
   100% {box-shadow: 0px 0px 50px rgba(255, 255, 255, 1);}
 }
 .projectImg {
-  width: 616px;
-  height: 323px;
-  background: rgba(217,217,217,1);
+  width: 500px;
+  height: 250px;
+  /*background: rgba(217,217,217,1);
   /*opacity: 1;*/
   position: relative;
   top: 30px;
@@ -248,12 +261,12 @@ a.projectLink {
   text-align: left;*/
 }
 .projectTitle {
-  width: 558px;
+  /*width: 558px;
   color: rgba(255,255,255,1);
   /*position: relative;
   top: 0px;
   left: 0px;*/
-  font-family: Inter;
+  /*font-family: Inter;
   font-weight: Bold;
   font-size: 40px;
   margin: 0px;
@@ -261,21 +274,21 @@ a.projectLink {
   text-align: left;*/
 }
 .projectDescrip{
-  color: rgba(225,237,244,1);
+  /*color: rgba(225,237,244,1);*/
   position: relative;
   top: 50px;
-  font-family: Nunito Sans;
+  /*font-family: Nunito Sans;
   font-weight:  Bold;
-  font-size:  24px;
+  font-size:  24px;*/
   text-align: center;
   margin: auto;
-  width: 600px;
+  /*width: 600px;*/
 }
 
 .headerContainer{
-  position: relative;
+  /*position: relative;
   top: 114px;
-  left: 428px;
+  left: 428px;*/
 
 }
 .v71_18 {

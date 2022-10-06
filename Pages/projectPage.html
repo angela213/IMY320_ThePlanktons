@@ -4,23 +4,63 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet" />
-    <link href="../CSS/project.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="../CSS/all.css" rel="stylesheet" />
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../CSS/NavStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="../CSS/project.css" rel="stylesheet" />
+    <title>Project 1</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../Media/Images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Media/Images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Media/Images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../Media/Images/favicon_io/site.webmanifest">
 </head>
 
-<body onload="fadeIn()">
+<body onload="fadeIn()" id="individualProj">
     <div class = "overlay">
 
     </div>
-    <div class="container">
-        <div class="v71_18">
-            <span class="v71_19">Logo</span>
-            <div class="v71_20">
+    <div class = "screenSize">
+            <div class = "projPos">
 
             </div>
+    </div>
+    <script type="text/javascript">
+                    $(":root").css({"--projectsTop": "45%", "--projectsLeft": "92%", "--contactTop": "15%", "--contactLeft": "84%", "--homeTop": "75%", "--homeLeft": "84%"})
+        </script>
+        <div id="logo">
+            <img  id="logoBackDrop" src="../Media/logoBackDrop.png" alt="logoBackDrop">
+            <img  id="logoPic" onmouseover="backflip(this)" src="../Media/logoPic.png" alt="logoPic">
+            <img  id="logoGif" onmouseover="backflip(this)" src="../Media/backflip2.gif" alt="logoBackFlip">
         </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <nav>
+                        <div class="circle">
+                                <div id="contactUsNav">Contact Us</div>
+                                <div id="projects">Projects</div>
+                                <div id="home">Home</div> 
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div> 
+     
+        <div class="page">
+        <!--<div class="container">-->
+            
+            <!--<div class="v58_3">
+                
+            </div>
+            <div class="v58_4">
+                
+            </div>-->
+
+
+
+
+            <content>
         <!--<div class="v58_3">
                 
             </div>
@@ -33,11 +73,11 @@
         </div>-->
         <div class="headerContainer">
 
-            <!--<div class="projectRow">-->
+            <div class="projectRow">
                 
                 <div class="project">
                     <h1 class="projectTitle">Project 1 name:</h1>
-                    <a class="projectLink" id = "Project_1" onclick="projectChangePage(1);">
+                    <a class="projectLink" id = "Project_1" href = "https://drive.google.com/drive/folders/1uQk0zJhM5rg3AROKsQnlNPQ1S1athFkn?usp=sharing">
                         <div class="projectImg image" style = "background-image: url('../Media/Images/rick.png');">
 
                             <!--<span class="projectImgPlaceholder">Project screenshot.
@@ -70,9 +110,9 @@
                             <li>Member 3</li>
                         </ul>                                       
                 </div>
-                </a>
-            <!--</div>-->
+            </div>
         </div>
+    </content>
     </div>
     <br />
     <br />
@@ -83,9 +123,11 @@
     <br />
     <br />
     <br />
-    </div>
-    </div>
+    <!--</div>
+    </div>-->
     <script type="text/javascript" src="../JS/projects.js"></script>
+    <script type="text/javascript" src="../JS/navbar.js"></script>
+    <script src="../JS/stickman.js"></script>
 </body>
 
 </html>

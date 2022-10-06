@@ -2,17 +2,23 @@
     <head>
         <title>About Us</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="../CSS/all.css" rel="stylesheet" />
         <link rel="stylesheet" href="../CSS/NavStyle.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body> 
+        <div id="logo">
+            <img  id="logoBackDrop" src="../Media/logoBackDrop.png" alt="logoBackDrop">
+            <img  id="logoPic" onmouseover="backflip(this)" src="../Media/logoPic.png" alt="logoPic">
+            <img  id="logoGif" onmouseover="backflip(this)" src="../Media/backflip2.gif" alt="logoBackFlip">
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
                     <nav>
                         <div class="circle">
                                 <div id="home">Home</div>
-                                <div id="contactUsNav">About Us</div>
+                                <div id="contactUsNav">Contact Us</div>
                                 <div id="projects">Projects</div> 
                         </div>
                     </nav>
@@ -43,4 +49,5 @@
         </div> 
     </body>
     <script type="text/javascript" src="../JS/navbar.js"></script>
+     <script type="text/javascript" src="../JS/stickman.js"></script>
 </htm>

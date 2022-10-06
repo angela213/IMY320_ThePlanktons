@@ -1,4 +1,11 @@
-
+:root{
+    --projectsTop:  75%;
+    --projectsLeft:  84%;
+    --homeTop: 15%;
+    --homeLeft: 84%;
+    --contactTop: 45%;
+    --contactLeft: 92%;
+}
 
 
 body{
@@ -35,8 +42,8 @@ a:hover{
     background: #FF0035;
     border-radius: 50%;
     position: absolute;
-    top: 15%;
-    left: 84%;
+    top: var(--homeTop);
+    left: var(--homeLeft);
     width: 140px;
     height: 100px;
     text-align: center;
@@ -72,8 +79,8 @@ a:hover{
     background: #FF0035;
     border-radius: 50%;
     position: absolute;
-    top: 45%;
-    left: 92%;
+    top: var(--contactTop);
+    left: var(--contactLeft);
     width: 140px;
     height: 100px;
     text-align: center;
@@ -90,8 +97,8 @@ a:hover{
     background: #FF0035;
     border-radius: 50%;
     position: absolute;
-    top: 75%;
-    left: 84%;
+    top: var(--projectsTop);
+    left: var(--projectsLeft);
     width: 140px;
     height: 100px;
     text-align: center;

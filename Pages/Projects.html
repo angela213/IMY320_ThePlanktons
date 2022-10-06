@@ -3,37 +3,45 @@
     <head>
         <!--<link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet" />-->
-        <link href="../CSS/projects.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link href="../CSS/all.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../CSS/NavStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="../CSS/projects.css" rel="stylesheet" />
+        
         <title>Projects - The Planktons</title>
         
     </head>
     <body>
-        <nav>
-              <div class="col-sm-4">
-                    <nav>
-                        <div class="circle">
-                            <a href="../Pages/home.html">
-                                <div id="home"><text>Home</text></div>
-                            </a>
-                            <a href="../Pages/ContactUs.html">
-                                <div id="contactUsNav"><text>Contact Us</text></div>
-                            </a>
-                            <a href="../Pages/projects.html">
-                                <div id="projects"><text>Projects</text></div>
-                            </a>    
-                        </div>
-                    </nav>
-                </div>
-        </nav>
-     <div id="logo">
+        <script type="text/javascript">
+                    $(":root").css({"--projectsTop": "45%", "--projectsLeft": "92%", "--contactTop": "15%", "--contactLeft": "84%", "--homeTop": "75%", "--homeLeft": "84%"})
+        </script>
+        <div id="logo">
             <img  id="logoBackDrop" src="../Media/logoBackDrop.png" alt="logoBackDrop">
             <img  id="logoPic" onmouseover="backflip(this)" src="../Media/logoPic.png" alt="logoPic">
             <img  id="logoGif" onmouseover="backflip(this)" src="../Media/backflip2.gif" alt="logoBackFlip">
-
         </div>
+        <div class = "screenSize">
+            <div class = "projPos">
+
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <nav>
+                        <div class="circle">
+                                <div id="contactUsNav">Contact Us</div>
+                                <div id="projects">Projects</div>
+                                <div id="home">Home</div> 
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div> 
+     
         <div class="page">
-        <div class="container">
+        <!--<div class="container">-->
             
             <!--<div class="v58_3">
                 
@@ -41,27 +49,29 @@
             <div class="v58_4">
                 
             </div>-->
-
+            <content>
             <div class = headerContainer>
                 <h1 class="title">Projects</h1>
                 <p class="subtitle">Below is a showcase on the various projects we have worked on.</p>
             </div>
+            <br />
             <div class = "projectContainer">
 
                 <div class = "projectRow">
                     <div class="project">
-                        <h1 class="projectTitle">Project 1 name:</h1>
+                        <h3 class="projectTitle">Project 1 name:</h3>
                         <a class = "projectLink" id = "Project_1" onclick="projectChangePage(1);">
                             <div class="projectImg projectImgAnim image" style = "background-image: url('../Media/Images/rick.png');">
-                                <!--<div class="image" style = "background-image: url('../Media/Images/rick.png');">
-                                </div> -->
+                                <!--<span class="projectImgPlaceholder">Project screenshot.
+                                Clickable and links 
+                                to actual project</span>-->
                             </div>
                         </a>
                         <p class="projectDescrip">Short description about what the project basically is. Two lines max</p>
                     </div>
                     <div class="projectRight">
-                        <h1 class="projectTitle">Project 2 name:</h1>
-                        <a class = "projectLink" id = "Project_2" onclick="projectChangePage(2);">
+                        <h3 class="projectTitle">Project 2 name:</h3>
+                        <a class = "projectLink"  id = "Project_2" onclick="projectChangePage(2);">
                             <div class="projectImg projectImgAnim image" style = "background-image: url('../Media/Images/rick.png');">
                                 <!--<span class="projectImgPlaceholder">Project screenshot.
                                 Clickable and links 
@@ -76,7 +86,7 @@
                 <br />
                 <div class = "projectRow">
                     <div class="project">
-                        <h1 class="projectTitle">Project 3 name:</h1>
+                        <h3 class="projectTitle">Project 3 name:</h3>
                         <a class = "projectLink" id = "Project_3" onclick="projectChangePage(3);">
                             <div class="projectImg projectImgAnim image" style = "background-image: url('../Media/Images/rick.png');">
                                 <!--<span class="projectImgPlaceholder">Project screenshot.
@@ -87,7 +97,7 @@
                         <p class="projectDescrip">Short description about what the project basically is. Two lines max</p>
                     </div>
                     <div class="projectRight">
-                        <h1 class="projectTitle">Project 4 name:</h1>
+                        <h3 class="projectTitle">Project 4 name:</h3>
                         <a class = "projectLink"  id = "Project_4" onclick="projectChangePage(4);">
                             <div class="projectImg projectImgAnim image" style = "background-image: url('../Media/Images/rick.png');">
                                 <!--<span class="projectImgPlaceholder">Project screenshot.
@@ -103,7 +113,7 @@
                 <br />
                 <div class = "projectRow">
                     <div class="project">
-                        <h1 class="projectTitle">Project 5 name:</h1>
+                        <h3 class="projectTitle">Project 5 name:</h3>
                         <a class = "projectLink"  id = "Project_5" onclick="projectChangePage(5);">
                             <div class="projectImg projectImgAnim image" style = "background-image: url('../Media/Images/rick.png');">
                                 <!--<span class="projectImgPlaceholder">Project screenshot.
@@ -114,7 +124,7 @@
                         <p class="projectDescrip">Short description about what the project basically is. Two lines max</p>
                     </div>
                     <div class="projectRight">
-                        <h1 class="projectTitle">Project 6 name:</h1>
+                        <h3 class="projectTitle">Project 6 name:</h3>
                         <a class = "projectLink"  id = "Project_6" onclick="projectChangePage(6);">
                             <div class="projectImg projectImgAnim image" style = "background-image: url('../Media/Images/rick.png');">
                                 <!--<span class="projectImgPlaceholder">Project screenshot.
@@ -130,7 +140,7 @@
                 <br />
                 <div class = "projectRow">
                     <div class="project">
-                        <h1 class="projectTitle">Project 7 name:</h1>
+                        <h3 class="projectTitle">Project 7 name:</h3>
                         <a class = "projectLink" id = "Project_7" onclick="projectChangePage(7);">
                             <div class="projectImg projectImgAnim image" style = "background-image: url('../Media/Images/rick.png');">
                                 <!--<span class="projectImgPlaceholder">Project screenshot.
@@ -141,7 +151,7 @@
                         <p class="projectDescrip">Short description about what the project basically is. Two lines max</p>
                     </div>
                     <div class="projectRight">
-                        <h1 class="projectTitle">Project 8 name:</h1>
+                        <h3 class="projectTitle">Project 8 name:</h3>
                         <a class = "projectLink"  id = "Project_8" onclick="projectChangePage(8);">
                             <div class="projectImg projectImgAnim image" style = "background-image: url('../Media/Images/rick.png');">
                                 <!--<span class="projectImgPlaceholder">Project screenshot.
@@ -157,7 +167,7 @@
                 <br />
                 <div class = "projectRow">
                     <div class="project">
-                        <h1 class="projectTitle">Project 9 name:</h1>
+                        <h3 class="projectTitle">Project 9 name:</h3>
                         <a class = "projectLink"  id = "Project_9" onclick="projectChangePage(9);">
                             <div class="projectImg projectImgAnim image" style = "background-image: url('../Media/Images/rick.png');">
                                 <!--<span class="projectImgPlaceholder">Project screenshot.
@@ -168,7 +178,7 @@
                         <p class="projectDescrip">Short description about what the project basically is. Two lines max</p>
                     </div>
                     <div class="projectRight">
-                        <h1 class="projectTitle">Project 10 name:</h1>
+                        <h3 class="projectTitle">Project 10 name:</h3>
                         <a class = "projectLink"  id = "Project_10" onclick="projectChangePage(10);">
                             <div class="projectImg projectImgAnim image" style = "background-image: url('../Media/Images/rick.png');">
                                 <!--<span class="projectImgPlaceholder">Project screenshot.
@@ -183,11 +193,12 @@
                 <br />
                 <br />
             </div>
-        </div>
+        </content>
+        <!--</div>-->
     </div>
 
     </body>
     <script type="text/javascript" src="../JS/projects.js"></script>
-        <script type="text/javascript" src="../JS/navbar.js"></script>
-        <script src="../JS/home.js"></script>
+    <script type="text/javascript" src="../JS/navbar.js"></script>
+    <script src="../JS/stickman.js"></script>
 </html>

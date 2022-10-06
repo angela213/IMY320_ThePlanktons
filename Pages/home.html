@@ -4,73 +4,69 @@
 	  <title>Home page</title>
 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="../CSS/home.css">
+	  <link rel="stylesheet" href="../CSS/NavStyle.css">
 	  <link rel="stylesheet" href="../CSS/all.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 
 	<body>
-		<nav>
-			 <div class="circle">
-                     <a href="../Pages/home.html">
-                          <div id="home"><text>Home</text></div>
-                            </a>
-                            <a href="../Pages/ContactUs.html">
-                                <div id="contactUsNav"><text>Contact Us</text></div>
-                            </a>
-                            <a href="../Pages/projects.html">
-                                <div id="projects"><text>Projects</text></div>
-                            </a>    
+				<div id="logo">
+					<img  id="logoBackDrop" src="../Media/logoBackDrop.png" alt="logoBackDrop">
+					<img  id="logoPic" onmouseover="backflip(this)" src="../Media/logoPic.png" alt="logoPic">
+					<img  id="logoGif" onmouseover="backflip(this)" src="../Media/backflip2.gif" alt="logoBackFlip">
+				</div>
+		<div class="container-fluid">
+			<div class="row">
+				
+				<div class="col-sm-4">
+                    <nav>
+                        <div class="circle">
+                                <div id="home">Home</div>
+                                <div id="contactUsNav">About Us</div>
+                                <div id="projects">Projects</div> 
                         </div>
-		</nav>
-		<div id="logo">
-			<img  id="logoBackDrop" src="../Media/logoBackDrop.png" alt="logoBackDrop">
-			<img  id="logoPic" onmouseover="backflip(this)" src="../Media/logoPic.png" alt="logoPic">
-			<img  id="logoGif" onmouseover="backflip(this)" src="../Media/backflip2.gif" alt="logoBackFlip">
+                    </nav>
+                </div>
+				<div class="page">
+					<content>
 
-		</div>
-		<div class="page">
-		<content>
+							<h1>About us</h1>
+							<p>Our company StackMan is a content creation website. We have displayed a few of our previous projects in the <a href="projects.html">projects</a> page for you to see. We work in broad spectrum of animation, 3d modelling, back end coding(java, php and c++), front end coding(javaScript, html and CSS) and game development in unity c#</p>
 
-			<h1>About us</h1>
-			<p>Our company StackMan is a content creation website. We have displayed a few of our previous projects in the <a href="projects.html">projects</a> page for you to see. We work in broad spectrum of animation, 3d modelling, back end coding(java, php and c++), front end coding(javaScript, html and CSS) and game development in unity c#</p>
+							<br/>
 
-			<br/>
+							<div id= lightBlock>
+								<h3>Meet the Team!</h3>
 
-			<div id= lightBlock>
-				<h3>Meet the Team!</h3>
+								<div id="lightDiv">
+									<img  id="LightStick" src="../Media/lightStick.png" alt="lightStick">
+									<img  id="Light" src="../Media/goodLight2.png" alt="spotLight">
+									<!--<img  id="Light" src="Media/justLight.png" alt="spotLight">-->
+									<!--<img  id="lightBeam" src="Media/lightBeam.png" alt="lightBeam">-->
+								</div>
+							    </br>
+								<div id="meetTeam" ><!--onmousemove="lightMove(event.clientX, event.clientY)"-->
+									
+									<div class="portraits"> <img  id="Tertius" src="../Media/TertiusPic.png"  onclick="Tertius()" alt="Girl portrait"></div>
+									<div class="portraits"> <img  id="Francois" src="../Media/FrancoisPic.png" onclick="Francois()" alt="Girl portrait"></div>
+									<div class="portraits"> <img  id="Angela" src="../Media/AngelaPic.png"  onclick="Angela()" alt="Girl portrait"></div>
+									<div class="portraits"> <img  id="Jay" src="../Media/JayPic.png" onclick="Jay()" alt="Girl portrait"></div>
+									<div class="portraits"> <img  id="James" src="../Media/JamesPic.png" onclick="James()" alt="Girl portrait"></div>
+								</div>
 
-				<div id="lightDiv">
-					<img  id="LightStick" src="../Media/lightStick.png" alt="lightStick">
-					<img  id="Light" src="../Media/goodLight2.png" alt="spotLight">
-					<!--<img  id="Light" src="Media/justLight.png" alt="spotLight">-->
-					<!--<img  id="lightBeam" src="Media/lightBeam.png" alt="lightBeam">-->
+							</div> <!--end of lightBlock-->
+
+							<div class="teamParagraph">
+								<h3 id="headingTeamMember"> </h3>
+								<p id="paragraphTeamMember"> </p>
+							</div>
+						</br>
+						</br>
+						</br>
+					</content>
 				</div>
-			    </br>
-				<div id="meetTeam" ><!--onmousemove="lightMove(event.clientX, event.clientY)"-->
-					
-					<div class="portraits"> <img  id="Tertius" src="../Media/TertiusPic.png"  onclick="Tertius()" alt="Girl portrait"></div>
-					<div class="portraits"> <img  id="Francois" src="../Media/FrancoisPic.png" onclick="Francois()" alt="Girl portrait"></div>
-					<div class="portraits"> <img  id="Angela" src="../Media/AngelaPic.png"  onclick="Angela()" alt="Girl portrait"></div>
-					<div class="portraits"> <img  id="Jay" src="../Media/JayPic.png" onclick="Jay()" alt="Girl portrait"></div>
-					<div class="portraits"> <img  id="James" src="../Media/JamesPic.png" onclick="James()" alt="Girl portrait"></div>
-				</div>
-
-			</div> <!--end of lightBlock-->
-
-			<div class="teamParagraph">
-				<h3 id="headingTeamMember"> </h3>
-				<p id="paragraphTeamMember"> </p>
 			</div>
-		</br>
-		</br>
-		</br>
-	</content>
-	</div>
-	<footer>
-		StackMan Limited 
-		+27 09809384092
-		Pretoria South Africa
-	</footer>
+		</div>
 	</body>
 	<script src="../JS/home.js"></script>
 	<script type="text/javascript" src="../JS/navbar.js"></script>

@@ -17,6 +17,7 @@ a {
 }
 
 #Light{
+<<<<<<< Updated upstream
 	position: absolute;
 	top: 255px;
 	left:  335px;
@@ -27,7 +28,27 @@ a {
 	left:  245px;
 	opacity: 0.4;
 	z-index: 1;
+=======
+	position: relative;
+	top:-129px;
+	margin-left: 13.5%;/*170px*/
+	width:50%;
+	/*top: 255px;
+	left:  335px;*/
 }
+
+#LightStick{
+	position: relative;
+	left:43%;
+	width:4%;
+	top: -55px;
+>>>>>>> Stashed changes
+}
+/*#LightStick{
+	position: absolute;
+	left:43%;
+	width:4%;
+}*/
 
 .portraits img{
   padding: 5px;
@@ -38,12 +59,21 @@ a {
 	display: inline;
 	margin: 10px;
 	z-index: 5;
+	position: relative;
+	top: -25px;
 	/*filter: brightness(60%);*/
 }
 
 #meetTeam{
+<<<<<<< Updated upstream
 	margin-top:  205px;
     margin-left: 200px;
+=======
+	position: relative;
+	margin-top: -47%;
+	/*margin-top:  205px;
+    margin-left: 200px;*/
+>>>>>>> Stashed changes
     margin-right: auto;
     width: 90%;
     /*width: 950px;*/
@@ -61,7 +91,11 @@ a {
 	 width: 160px;
 }*/
 .teamParagraph{
+<<<<<<< Updated upstream
 	margin-top: 30%;
+=======
+	margin-top: -3%;
+>>>>>>> Stashed changes
 	/*margin-top:  400px;*/
 }
 
@@ -73,3 +107,27 @@ a {
     transform-origin:  64.5% 13%;/* x ytransform-origin: 67% 21%;  lower x is to the left higher y to the top*/
     touch-action: none;
 }
+
+/*#Tertius:hover{
+	width: 10%;
+       -webkit-transition: all 0.5s ease-in-out;
+}
+
+#Francios:hover{
+	transform: scale(1.2); 
+}
+
+#Jay:hover{
+	width: 16%;
+       -webkit-transition: all 0.5s ease-in-out;
+}
+
+#Angela:hover{
+width: 16%;
+       -webkit-transition: all 0.5s ease-in-out;
+}
+
+#James:hover{
+width: 16%;
+       -webkit-transition: all 0.5s ease-in-out;
+}*/

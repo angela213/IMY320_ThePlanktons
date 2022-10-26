@@ -2,11 +2,7 @@
   box-sizing: border-box;
 }
 
-a {
-  color: #CC0029;
-  background-color: transparent;
-  text-decoration: none;
-}
+
 .screenSize{
   min-height: 100%;
   min-width: 100%;
@@ -94,8 +90,6 @@ body {
   height: 506px;
   width:  58%;
 }
-
-
 
 a.projectLink {
   color: inherit; /* blue colors for links too */

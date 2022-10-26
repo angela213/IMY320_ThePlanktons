@@ -15,18 +15,27 @@ a {
 
 #Light{
 	position: relative;
-	top:15px;
-	margin-left: 12.5%;/*170px*/
+
+	top:-129px;
+	margin-left: 13.5%;/*170px*/
+
 	width:50%;
 	/*top: 255px;
 	left:  335px;*/
 }
 
 #LightStick{
+	position: relative;
+	left:43%;
+	width:4%;
+	top: -55px;
+}
+/*#LightStick{
 	position: absolute;
 	left:43%;
 	width:4%;
-}
+}*/
+
 
 .portraits img{
 
@@ -38,11 +47,17 @@ a {
 	display: inline;
 	margin: 10px;
 	z-index: 5;
+
+	position: relative;
+	top: -25px;
+
 	/*filter: brightness(60%);*/
 }
 #meetTeam{
 	position: relative;
-	margin-top: -30%;
+
+	margin-top: -47%;
+
 	/*margin-top:  205px;
     margin-left: 200px;*/
     margin-right: auto;
@@ -53,7 +68,7 @@ a {
 
 
 .teamParagraph{
-	margin-top: -1%;
+	margin-top: -3%;
 	/*margin-top:  400px;*/
 }
 

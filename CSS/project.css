@@ -3,6 +3,12 @@
 }
 
 
+a {
+  color: #CC0029;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .screenSize{
   min-height: 100%;
   min-width: 100%;

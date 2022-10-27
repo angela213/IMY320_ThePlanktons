@@ -9,14 +9,22 @@ a {
   text-decoration: none;
 }
 
+/*#lightDiv{
+		position: relative;
+		left:100%;
+		top:100%;
+		height:100%;
+		width:100%;
+}*/
+
+
 #lightDiv img{
 	display: block;
 }
 
 #Light{
 	position: relative;
-
-	top:-129px;
+	top: -129px;
 	margin-left: 13.5%;/*170px*/
 
 	width:50%;

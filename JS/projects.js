@@ -114,28 +114,28 @@ async function fadeIn(){
   	var pNum = parseInt(projectPic.id.replace("Project_", ""));
   	switch(pNum){
   		case 1:
-  			source.src = "../Media/Videos/TertRobot_1.mp4";
+  			source.src = "../Media/Videos/WildNorthShort_1.mp4";
   			break;
   		case 2:
-  			source.src = "../Media/Videos/rick.mp4";
+  			source.src = "../Media/Videos/HER_0.mp4";
   			break;
   		case 3:
-  			source.src = "../Media/Videos/rick.mp4";
+  			source.src = "../Media/Videos/JCP_2.mp4";
   			break;
   		case 4:
-  			source.src = "../Media/Videos/rick.mp4";
+  			source.src = "../Media/Videos/Tert_Lyric.mp4";
   			break;
   		case 5:
   			source.src = "../Media/Videos/rick.mp4";
   			break;
   		case 6:
-  			source.src = "../Media/Videos/rick.mp4";
+  			source.src = "../Media/Videos/JamesRobot_0.mp4";
   			break;
   		case 7:
-  			source.src = "../Media/Videos/rick.mp4";
+  			source.src = "../Media/Videos/FrancRobot_0.mp4";
   			break;
   		case 8:
-  			source.src = "../Media/Videos/rick.mp4";
+  			source.src = "../Media/Videos/TertRobot_1.mp4";
   			break;
   		case 9:
   			source.style.src = "../Media/Videos/rick.mp4";

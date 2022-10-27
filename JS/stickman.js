@@ -10,3 +10,7 @@ function resetLogo(){
     document.getElementById("logoGif").style.display="none";
 
 }
+document.addEventListener('scroll', (e) => {
+	document.getElementById("arrow").style.display="none";
+});
+

@@ -19,13 +19,15 @@ body {
   font-family: avocado2;
   src: url(../Media/Fonts/avocado_2/avocado.ttf);
 }
+
 @font-face{
-  font-family: soos;
-  src: url(../Media/Fonts/doctor_soos/Doctor Soos Light 1.1.ttf);
+  font-family: doctor_soos;
+  src: url(../Media/Fonts/doctor_soos/Doctor_Soos_Light.ttf);
 }
+
 @font-face{
-  font-family: pumkin;
-  src: url(../Media/Fonts/pumkins_halloween/Pumkins Halloween.ttf);
+  font-family: pumkins_halloween;
+  src: url(../Media/Fonts/pumkins_halloween/Pumkins_Halloween.ttf);
 }
 
 
@@ -59,13 +61,13 @@ body {
 h1, h2, h3{
 
   font-family: "avocado2";
-  /*font-family: "Century Gothic"; 
+  /*font-family: "MV Boli Berlin Sans FB"; 
   /*  /*font-family: "Century Gothic"; */
  
 }
 
 p{
-    font-family: "pumkin";
+    font-family: "doctor_soos";
 }
 
 .page{

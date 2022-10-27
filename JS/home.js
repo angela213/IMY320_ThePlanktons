@@ -1,12 +1,14 @@
 //document.addEventListener("DOMContentLoaded", function() {
 
 
-setTimeout(getHomePage, 7000);//starts counting from loaded
-function getHomePage(){
+
+setTimeout(getHomePage, 7500);//starts counting from loaded
+function getHomePage(){//we nee to make this thing wait or make the loading generic enough that it doesn't have to
   console.log("hi");
     document.getElementById("loading").style.display="none";
     window.location.href = "Pages/home.html";
-}
+}//*/
+
 
 document.getElementById("logoGif").style.display="none";
 function backflip(e){
@@ -32,6 +34,7 @@ function highlightTertius(){
 
  document.getElementById("headingTeamMember").innerHTML = "Tertius";
   document.getElementById("paragraphTeamMember").innerHTML = "Tertius is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+
   document.getElementById("Tertius").src="../Media/TertiusPicColour.png";
   //document.getElementById("Tertius").style.width="149px";
 
@@ -40,6 +43,7 @@ function highlightTertius(){
   document.getElementById("Jay").src="../Media/JayPic.png";
   document.getElementById("James").src="../Media/JamesPic.png";
 }
+
 function highlightAngela(){
  
   document.getElementById("James").style.filter = "brightness(60%)";
@@ -50,6 +54,7 @@ function highlightAngela(){
 
   document.getElementById("headingTeamMember").innerHTML = "Angela";
   document.getElementById("paragraphTeamMember").innerHTML = "Angela loves being part of this team as she can put all her ideas into many different types of projects. Cool functions and interactions are her go to for front end development. She is fun loving and excited to turn all your dreams into reality! P.S There are also women in StackMan!";
+
  document.getElementById("Angela").src="../Media/AngelaPicColour.png";
 
 document.getElementById("Tertius").src="../Media/TertiusPic.png";
@@ -57,6 +62,7 @@ document.getElementById("Tertius").src="../Media/TertiusPic.png";
   document.getElementById("Jay").src="../Media/JayPic.png";
   document.getElementById("James").src="../Media/JamesPic.png";
 }
+
 function highlightJay(){
  
   document.getElementById("James").style.filter = "brightness(60%)";
@@ -67,6 +73,7 @@ function highlightJay(){
 
  document.getElementById("headingTeamMember").innerHTML = "Jay";
   document.getElementById("paragraphTeamMember").innerHTML = "Jay is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ";
+
   document.getElementById("Jay").src="../Media/JayPicColour.png";
   //document.getElementById("Jay").style.width="151px";
 
@@ -75,6 +82,7 @@ function highlightJay(){
   document.getElementById("Angela").src="../Media/AngelaPic.png";
   document.getElementById("James").src="../Media/JamesPic.png";
 }
+
 function highlightJames(){
  
   document.getElementById("Jay").style.filter = "brightness(60%)";
@@ -84,6 +92,7 @@ function highlightJames(){
  document.getElementById("James").style.filter = "brightness(100%)";
 
  document.getElementById("headingTeamMember").innerHTML = "James";
+
   document.getElementById("paragraphTeamMember").innerHTML = "James is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ;alskjf;laskdjflaskjdlsakjfdkjkdjffffffffffffffffflskdjflaksjdflaksdjflaksdfasdfasdfasasdfakjsdfkahdfklajdfhlkajsdfh ajklsdfhlakd akljdhfalk sjdfha askjdfhklasjdfh ahklsjdfhlak haskdjfhaksjdfhakjd aksdjfhskj jdjdjd kajsdfhlakjsdfhklasjdfhal kajsdfhasdf";
   document.getElementById("James").src="../Media/JamesPicColour.png";
   //document.getElementById("James").style.width="148px";
@@ -93,6 +102,7 @@ function highlightJames(){
   document.getElementById("Jay").src="../Media/JayPic.png";
   document.getElementById("Angela").src="../Media/AngelaPic.png";
 }
+
 function highlightFrancois(){
  console.log("hi hover works ");
   document.getElementById("James").style.filter = "brightness(60%)";
@@ -111,7 +121,7 @@ function highlightFrancois(){
   document.getElementById("James").src="../Media/JamesPic.png";
 }
 
- 
+
 
   var light = document.getElementById("Light"),
   lightBox = light.getBoundingClientRect(),

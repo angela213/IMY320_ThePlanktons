@@ -3,6 +3,15 @@
 }
 
 
+<<<<<<< HEAD
+=======
+a {
+  color: #CC0029;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+>>>>>>> 437b21374da34ec18d369f0bef6173b270827c9d
 .screenSize{
   min-height: 100%;
   min-width: 100%;

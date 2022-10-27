@@ -33,7 +33,7 @@ body {
 
 #logoBackDrop{
 	position: fixed;
-	z-index: 1;
+	z-index: 7;
 	right:0;
 	top:40px;
 	padding:10px;

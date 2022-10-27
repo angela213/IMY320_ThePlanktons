@@ -56,7 +56,7 @@ function highlightJay(){
  document.getElementById("Jay").style.filter = "brightness(100%)";
 
  document.getElementById("headingTeamMember").innerHTML = "Jay";
-  document.getElementById("paragraphTeamMember").innerHTML = "Jay is the computer scientist of our company. He secretly whishes he can deign more things because his design is almost better than everyone's elses. He remains the head of our computer science department with a proud smile.";
+  document.getElementById("paragraphTeamMember").innerHTML = "Jay is the computer scientist of our company. He secretly whishes he can design more things because his design is almost better than everyone's elses. He remains the head of our computer science department with a proud smile.";
 
   document.getElementById("Jay").src="../Media/JayPicColour.png";
   //document.getElementById("Jay").style.width="151px";
@@ -77,7 +77,7 @@ function highlightJames(){
 
  document.getElementById("headingTeamMember").innerHTML = "James";
 
-  document.getElementById("paragraphTeamMember").innerHTML = "James has a bit of a work addiction. He will not stop until the project is nothing short from perfect. He loves back end-development, always making evryone else feel a bit behind with their outdated software. Nobody is secretly as good as James in design, although he might try to make you think otherwise.";
+  document.getElementById("paragraphTeamMember").innerHTML = "James has a bit of a work addiction. He will not stop until the project is nothing short from perfect. He loves back end-development, always making everyone else feel a bit behind with their outdated software. Nobody is secretly as good as James in design, although he might try to make you think otherwise.";
   document.getElementById("James").src="../Media/JamesPicColour.png";
   //document.getElementById("James").style.width="148px";
 

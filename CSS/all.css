@@ -19,13 +19,15 @@ body {
   font-family: avocado2;
   src: url(../Media/Fonts/avocado_2/avocado.ttf);
 }
+
 @font-face{
-  font-family: soos;
-  src: url(../Media/Fonts/doctor_soos/Doctor Soos Light 1.1.ttf);
+  font-family: doctor_soos;
+  src: url(../Media/Fonts/doctor_soos/Doctor_Soos_Light.ttf);
 }
+
 @font-face{
-  font-family: pumkin;
-  src: url(../Media/Fonts/pumkins_halloween/Pumkins Halloween.ttf);
+  font-family: pumkins_halloween;
+  src: url(../Media/Fonts/pumkins_halloween/Pumkins_Halloween.ttf);
 }
 
 
@@ -33,7 +35,7 @@ body {
 
 #logoBackDrop{
 	position: fixed;
-	z-index: 1;
+	z-index: 7;
 	right:0;
 	top:40px;
 	padding:10px;
@@ -59,13 +61,13 @@ body {
 h1, h2, h3{
 
   font-family: "avocado2";
-  /*font-family: "Century Gothic"; 
+  /*font-family: "MV Boli Berlin Sans FB"; 
   /*  /*font-family: "Century Gothic"; */
  
 }
 
 p{
-    font-family: "pumkin";
+    font-family: "doctor_soos";
 }
 
 .page{
@@ -123,25 +125,8 @@ a{
     left: 87%;
     width: 140px;
     height: 100px;
-    text-align: center;
-    
+    text-align: center;    
 }
-
-/* #home:hover{
-    background: #FF0035;
-    border-radius: 50%;
-    position: relative;
-    top: 26%;
-    left: 87%;
-    width: 140px;
-    height: 100px;
-    text-align: center;
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    border-radius: 50%;
-} */
 
 #home text{
     position: relative;
@@ -203,28 +188,56 @@ nav{
   left:0;
   padding-left: 320px;
  
-  padding-right:100px;
+  padding-right:160px;
+
   width: 100%;
   background-color: #0E131F;
   top:30px;
-  font-size: 17px;
+  font-size: 21px;
   /* put on top */
   position: relative;
   z-index: 1;
 
 }
+#ContactUs{
+    font-size:20px;
+}
+.social{
+    width:5%;
+    transition: transform .2s;
+}
+.social:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#socialLogos{
+    margin-left:33%;
+}
+footer #socialLogos li{
+    display: inline;
+    margin-left:5%;
+    margin-right:5%;
+     
+}
+#textFooter{
+    padding-left:40%;
+}
 footer {
   position: sticky;
   bottom: 0;
   left: 0;
-  width: 100%;
-
+ 
+  font-size: 17px;
   background: #677079;
-  display: grid;
+  /*display: grid;*/
   padding: 50px;
+  
+  width: 100%;
+ 
+  
   justify-content: center;
   align-items: center;
 }
+
 
 
 

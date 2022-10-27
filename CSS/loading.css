@@ -1,4 +1,17 @@
+body, html{
+	height: 100%;
+	margin: 0;
+}
 
+.bg{
+	background-image: url("../Media/StackManAnimation2.gif");
+	height: 100%;
+	backgpround-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*
 body{
 	background-color: #0D111C;
 }
@@ -8,4 +21,4 @@ body{
 	height: 110%;
 	margin: 0;
 	padding:0;
-}
+}*/

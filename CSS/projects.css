@@ -92,7 +92,9 @@ body {
 
 .projectRow{
   height: 410px;
-  width:  110%;
+  width:  80%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .screenSize{
@@ -131,9 +133,9 @@ a.projectLink {
 }
 
 .project {
-  width: 100%;
+  width: 50%;
   height: 100%;
-  background-color: rgb(13, 17, 28);
+  background-color: rgb(14 21 39);
   /*background: url("../images/v58_8.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -145,11 +147,12 @@ a.projectLink {
   /*overflow: hidden;*/
 }
 .projectRight {
-  width: 100%;
+  width: 50%;
   height: 100%;
+  background-color: rgb(14 21 39);
   position: relative;
-  top: -104%;
-  left: 100%;
+  top: -105%;
+  left: 55%;
   /*background: url("../images/v58_8.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -185,11 +188,11 @@ a.projectLink {
 }
 
 @keyframes breatheFocused{
-  0% {box-shadow: 0px 0px 50px rgba(255, 255, 255, 1);}
+  0% {box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);}
   /*25% {box-shadow: 0px 0px 200px rgba(0, 0, 0, 1.0) inset;}*/
-  50% {box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25);}
+  50% {box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.25);}
   /*75% {box-shadow: 0px 0px 200px rgba(0, 0, 0, 1.0) inset;}*/
-  100% {box-shadow: 0px 0px 50px rgba(255, 255, 255, 1);}
+  100% {box-shadow: 0px 0px 5px rgba(255, 255, 255, 1);}
 }
 .projectImg {
   width: 500px;
@@ -245,8 +248,8 @@ a.projectLink {
   /*-o-animation:      breatheFocused 5s infinite; /* Opera 12+ */
   /*animation:         breatheFocused 5s infinite;*/ 
   cursor: pointer;
-  --breatheStartVal: 0px 0px 50px rgba(255, 255, 255, 0.25);
-  --breatheEndVal: 0px 0px 50px rgba(255, 255, 255, 1);
+  --breatheStartVal: 0px 0px 25px rgba(255, 255, 255, 0.25);
+  --breatheEndVal: 0px 0px 25px rgba(255, 255, 255, 1);
 }
 .projectImgPlaceholder {
   width: 383px;

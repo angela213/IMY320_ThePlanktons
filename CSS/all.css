@@ -204,19 +204,31 @@ nav{
 .social:hover {
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-#socialLogos li{
+#socialLogos{
+    margin-left:33%;
+}
+footer #socialLogos li{
     display: inline;
+    margin-left:5%;
+    margin-right:5%;
      
+}
+#textFooter{
+    padding-left:40%;
 }
 footer {
   position: sticky;
   bottom: 0;
   left: 0;
-  width: 100%;
-    font-size: 16px;
+ 
+  font-size: 16px;
   background: #677079;
-  display: grid;
+  /*display: grid;*/
   padding: 50px;
+  
+  width: 100%;
+ 
+  
   justify-content: center;
   align-items: center;
 }

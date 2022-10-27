@@ -1,27 +1,11 @@
-//document.addEventListener("DOMContentLoaded", function() {
-
-
-
-setTimeout(getHomePage, 7500);//starts counting from loaded
-function getHomePage(){//we nee to make this thing wait or make the loading generic enough that it doesn't have to
-  console.log("hi");
-    document.getElementById("loading").style.display="none";
-    window.location.href = "Pages/home.html";
-}//*/
-
-
+document.getElementById("logoPic").style.display="none";
 document.getElementById("logoGif").style.display="none";
-function backflip(e){
-    e.style.display="none";
-    document.getElementById("logoGif").style.display="block";
-    setTimeout(resetLogo, 3400);
-}
+setTimeout(getLogo, 4300);//starts counting from loaded
 
-function resetLogo(){
-    document.getElementById("logoPic").style.display="block";
-    document.getElementById("logoGif").style.display="none";
+function getLogo(){//we nee to make this thing wait or make the loading generic enough that it doesn't have to
+   document.getElementById("logoPic").style.display="block";
+   document.getElementById("superman").style.display="none";
 }
-
 
 // portraits
 function highlightTertius(){

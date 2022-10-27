@@ -4,7 +4,6 @@
 	  <title>Home page</title>
 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="../CSS/home.css">
-	  <link rel="stylesheet" href="../CSS/NavStyle.css">
 	  <link rel="stylesheet" href="../CSS/all.css">
 	  <link rel="stylesheet" href="../CSS/NavStyle.css">
 	  <link rel="apple-touch-icon" sizes="180x180" href="../Media/Images/favicon_io/apple-touch-icon.png">
@@ -18,13 +17,16 @@
 		<script type="text/javascript">
                     $(":root").css({"--projectsTop": "15%", "--projectsLeft": "84%", "--contactTop": "75%", "--contactLeft": "84%", "--homeTop": "45%", "--homeLeft": "92%"})
         </script>
+
 		<div id="logo">
 			<img  id="logoBackDrop" src="../Media/logoBackDrop.png" alt="logoBackDrop">
 			<img  id="logoPic" onmouseover="backflip(this)" src="../Media/logoPic.png" alt="logoPic">
 			<img  id="logoGif" onmouseover="backflip(this)" src="../Media/backflip2.gif" alt="logoBackFlip">
 
 		</div>
-		<div class="container-fluid">
+
+		<div class="container-fluid" class="navi">
+
             <div class="row">
                 <div class="col-sm-4">
                     <nav>
@@ -39,13 +41,9 @@
         </div> 
 		<div class="page">
 		<content>
-							<h1>About us</h1>
-							<p>Our company StackMan is a content creation website. We have displayed a few of our previous projects in the <a href="projects.html">projects</a> page for you to see. We work in broad spectrum of animation, 3d modelling, back end coding(java, php and c++), front end coding(javaScript, html and CSS) and game development in unity c#</p>
+			<div id= lightBlock>
+								<h1>Meet the Team!</h1>
 
-							<br/>
-
-							<div id= lightBlock>
-								<h3>Meet the Team!</h3>
 
 								<div id="lightDiv">
 									<img  id="LightStick" src="../Media/lightStick.png" alt="lightStick">
@@ -56,27 +54,41 @@
 							    </br>
 								<div id="meetTeam" ><!--onmousemove="lightMove(event.clientX, event.clientY)"-->
 									
-									<div class="portraits"> <img  id="Tertius" src="../Media/TertiusPic.png"  onclick="Tertius()" alt="Girl portrait"></div>
-									<div class="portraits"> <img  id="Francois" src="../Media/FrancoisPic.png" onclick="Francois()" alt="Girl portrait"></div>
-									<div class="portraits"> <img  id="Angela" src="../Media/AngelaPic.png"  onclick="Angela()" alt="Girl portrait"></div>
-									<div class="portraits"> <img  id="Jay" src="../Media/JayPic.png" onclick="Jay()" alt="Girl portrait"></div>
-									<div class="portraits"> <img  id="James" src="../Media/JamesPic.png" onclick="James()" alt="Girl portrait"></div>
+									<div class="portraits"> <img  id="Tertius" src="../Media/TertiusPic.png"  onmouseover="highlightTertius()" onclick="Tertius()" alt="Tertius portrait"></div>
+									<div class="portraits"> <img  id="Francois" src="../Media/FrancoisPic.png" onmouseover="highlightFrancois()" onclick="Francois()" alt="Francois portrait"></div>
+									<div class="portraits"> <img  id="Angela" src="../Media/AngelaPic.png"  onclick="Angela()" onmouseover="highlightAngela()" alt="Angela portrait"></div>
+									<div class="portraits"> <img  id="Jay" src="../Media/JayPic.png" onclick="Jay()" onmouseover="highlightJay()" alt="Jay portrait"></div>
+									<div class="portraits"> <img  id="James" src="../Media/JamesPic.png" onclick="James()" onmouseover="highlightJames()"alt="James portrait"></div>
 								</div>
 
-							</div> <!--end of lightBlock-->
+			</div> <!--end of lightBlock-->
 
 							<div class="teamParagraph">
-								<h3 id="headingTeamMember"> </h3>
+								<h2 id="headingTeamMember"> </h2>
 								<p id="paragraphTeamMember"> </p>
 							</div>
 						</br>
+						
+							<h1>About us</h1>
+							<p>Our company StackMan is a content creation website. We have displayed a few of our previous projects in the <a href="Projects.html">projects</a> page for you to see. We work in broad spectrum of animation, 3d modelling, back end coding(java, php and c++), front end coding(javaScript, html and CSS) and game development in unity c#</p>
 						</br>
-						</br>
-					</content>
-				</div>
-			</div>
-		</div>
+					</br>
+		</content>
+	</div><!--page-->
+
+	<footer>
+		<p>
+			StackMan Content Creation Company
+			</br>
+			<a href="ContactUs.html">Contact Us</a> for any inquiries.
+			</br>
+				Find Us at Instagram, facebook twitter 
+		</p>
+	</footer>
+			
 	</body>
+
+
 	<script src="../JS/home.js"></script>
 	<script type="text/javascript" src="../JS/navbar.js"></script>
 </html>

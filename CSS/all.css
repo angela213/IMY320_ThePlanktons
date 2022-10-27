@@ -1,7 +1,10 @@
 body {
 	background-color: #0D111C;
 }
-/*@font-face{
+
+
+@font-face{
+
   font-family: Inter;
   src: url(../Media/Fonts/Inter/Inter-VariableFont_slnt,wght.ttf);
 }
@@ -9,7 +12,25 @@ body {
 @font-face{
   font-family: Nunito Sans;
   src: url(../Media/Fonts/Nunito_Sans/NunitoSans-Regular.ttf);
-}*/
+
+}
+
+@font-face{
+  font-family: avocado2;
+  src: url(../Media/Fonts/avocado_2/avocado.ttf);
+}
+@font-face{
+  font-family: soos;
+  src: url(../Media/Fonts/doctor_soos/Doctor Soos Light 1.1.ttf);
+}
+@font-face{
+  font-family: pumkin;
+  src: url(../Media/Fonts/pumkins_halloween/Pumkins Halloween.ttf);
+}
+
+
+
+
 #logoBackDrop{
 	position: fixed;
 	z-index: 1;
@@ -36,7 +57,15 @@ body {
 	font-size: 17px;
 }*/
 h1, h2, h3{
-  font-family: "Century Gothic";
+
+  font-family: "avocado2";
+  /*font-family: "Century Gothic"; 
+  /*  /*font-family: "Century Gothic"; */
+ 
+}
+
+p{
+    font-family: "pumkin";
 }
 
 .page{
@@ -48,8 +77,13 @@ h1, h2, h3{
 	top:40px;*/
 	padding: 100px;
 	padding-top: 50px;
-	font-family: "Tw Cen MT";
 	font-size: 17px;
+
+}
+footer a{
+    color: #CC0029;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 /*nav*/
@@ -66,7 +100,6 @@ h1, h2, h3{
 body{
     background-color: #0E131F;
     color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     margin: 0;
@@ -158,3 +191,40 @@ nav{
 	top:0;
 	z-index:10;
 }
+
+
+.circle{
+    font-family: avocado2;
+}
+
+.page{   
+  min-height: 100vh;
+  color: #E1EDF4;
+  left:0;
+  padding-left: 320px;
+ 
+  padding-right:100px;
+  width: 100%;
+  background-color: #0E131F;
+  top:30px;
+  font-size: 17px;
+  /* put on top */
+  position: relative;
+  z-index: 1;
+
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background: #677079;
+  display: grid;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

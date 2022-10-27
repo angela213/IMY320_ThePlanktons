@@ -12,6 +12,97 @@ async function fadeIn(){
 	document.body.firstElementChild.remove();
   	const projectPic = document.getElementsByClassName("projectLink")[0];
 
+
+  	/*const div = document.createElement("div");
+  	div.classList.add("video");
+  	const video = document.createElement("iframe");
+  	video.classList.add("thevideo");
+  	video.loop = true;
+  	video.muted = true;
+  	//video.preload = "auto";
+  	video.allow = "autoplay";
+  	var pNum = parseInt(projectPic.id.replace("Project_", ""));
+  	switch(pNum){
+  		case 1:
+  			video.src = "https://www.youtube.com/embed/dqlBcwsMiDM?controls=0?enablejsapi";
+  			break;
+  		case 2:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 3:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 4:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 5:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 6:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 7:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 8:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 9:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 10:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  	}
+  	//source.type = "video/mp4";
+  	//video.append(source);
+  	div.append(video);
+	*/
+
+  	/*const div = document.createElement("div");
+  	div.classList.add("video");
+  	const video = document.createElement("iframe");
+  	video.classList.add("thevideo");
+  	video.loop = true;
+  	video.muted = true;
+  	video.preload = "auto";
+  	var pNum = parseInt(projectPic.id.replace("Project_", ""));
+  	switch(pNum){
+  		case 1:
+  			video.src = "https://www.youtube.com/embed/dqlBcwsMiDM";
+  			break;
+  		case 2:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 3:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 4:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 5:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 6:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 7:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 8:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 9:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  		case 10:
+  			video.src = "../Media/Videos/rick.mp4";
+  			break;
+  	}
+  	//source.type = "video/mp4";
+  	//video.append(source);
+  	div.append(video);*/
+
   	const div = document.createElement("div");
   	div.classList.add("video");
   	const video = document.createElement("video");
@@ -23,7 +114,7 @@ async function fadeIn(){
   	var pNum = parseInt(projectPic.id.replace("Project_", ""));
   	switch(pNum){
   		case 1:
-  			source.src = "../Media/Videos/rick.mp4";
+  			source.src = "../Media/Videos/TertRobot_1.mp4";
   			break;
   		case 2:
   			source.src = "../Media/Videos/rick.mp4";
@@ -56,6 +147,10 @@ async function fadeIn(){
   	source.type = "video/mp4";
   	video.append(source);
   	div.append(video);
+  	
+
+
+
   	//projectPic.firstElementChild.firstElementChild.remove();
   	projectPic.firstElementChild.append(div);
   	cip = $(".video").hover( hoverVideo, hideVideo );
@@ -344,9 +439,14 @@ function projectChangePage(pageNum){
 
 function hoverVideo(e) {  
     $('video', this).get(0).play(); 
+    //console.log($(".thevideo")[0].src);
+    //Console.Log($('video', this).get(0).src);
+    //var symbol = $(".thevideo")[0].src.indexOf("?") > -1 ? "&" : "?";
+    //$(".thevideo")[0].src += symbol + "autoplay=1";
 }
 
 function hideVideo(e) {
     $('video', this).get(0).pause(); 
-
+    //var symbol = $(".thevideo")[0].src.indexOf("?") > -1 ? "&" : "?";
+    //$(".thevideo")[0].src += symbol + "autoplay=0";
 }

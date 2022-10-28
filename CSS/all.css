@@ -186,7 +186,7 @@ nav{
   font-size: 21px;
   /* put on top */
   position: relative;
-  /*z-index: 1;*/
+  z-index: 1;
 
 }
 #ContactUs{
@@ -226,7 +226,7 @@ footer {
   
   justify-content: center;
   align-items: center;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 

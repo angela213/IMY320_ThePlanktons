@@ -75,7 +75,7 @@ function ChangeNav(clicked){
         }else if(math == 54){
             if(clicked == "projects"){
                 if("individualProj".length > 0){
-                    window.location.assign("Projects.html");
+                    window.location.assign("../Projects.html");
                 }
             }
         }
@@ -137,6 +137,7 @@ $(document).ready(function(){
         //window.location.assign("index.html");
         ChangeNav("projects");
     });
+
 
 });
 

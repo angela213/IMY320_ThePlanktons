@@ -133,6 +133,11 @@ a.projectLink {
   
   /*overflow: hidden;*/
 }
+.projLinks{
+  position: relative;
+  left: 20%;
+  width: 60% !important; 
+}
 
 .project {
   width: 100%;

@@ -1,12 +1,47 @@
+var firstVisit = localStorage.firstVisit != "1"; // Get & store current state (null/"1")
+localStorage.firstVisit = "1";  // Page is now visited so set to "1" regardless
+console.log(localStorage.firstVisit);
+jQuery(function($){
+  var $superman = $("#superman"); // Use rather an ID. It's faster!
+  var $logoPic = $("#logoPic");
+  var $logoGif = $("#logoGif");
+
+  $superman.css({display: firstVisit ? "block" : "none"}); // Hide spin. if not first visit
+
+  if( firstVisit ) {            // First time on page
+    $(window).load(function() { // P.S: does not applies to unloaded images and media
+       console.log("firstVisit");
+     //  $superman.css("display", "block");
+       $logoPic.css("display", "none");
+       $logoGif.css("display", "none");
+      setTimeout(getLogo, 4300);//starts counting from loaded
+    });
+  }
+  else{
+    console.log("not first time");
+    $logoPic.css("display", "block");
+  }
+});
+
+
+
 document.getElementById("logoPic").style.display="none";
+setTimeout(getHomePage, 7500);//starts counting from loaded
+function getHomePage(){//we nee to make this thing wait or make the loading generic enough that it doesn't have to
+  console.log("hi");
+    document.getElementById("loading").style.display="none";
+    window.location.href = "Pages/CallToAction.html";
+}//*/
+
+
 document.getElementById("logoGif").style.display="none";
 setTimeout(getLogo, 4300);//starts counting from loaded
 
 function getLogo(){//we nee to make this thing wait or make the loading generic enough that it doesn't have to
+
    document.getElementById("logoPic").style.display="block";
    document.getElementById("superman").style.display="none";
 }
-
 // portraits
 function highlightTertius(){
  

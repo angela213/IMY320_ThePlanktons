@@ -5,6 +5,8 @@
     --homeLeft: 84%;
     --contactTop: 45%;
     --contactLeft: 92%;
+    /* --aboutTop: 35%;
+    --aboutLeft: 92%; */
 }
 
 
@@ -23,7 +25,7 @@ body{
     height: 120%;
     position: relative;
     bottom: 100px;
-    right: 155%;
+    right: 160%;
     
 }
 
@@ -52,6 +54,25 @@ a:hover{
 }
 
 #home:hover{
+    cursor: pointer;
+
+}
+
+#aboutUs{
+    background: #FF0035;
+    border-radius: 50%;
+    position: absolute;
+    top: var(--aboutTop);
+    left: var(--aboutLeft);
+    width: 140px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    line-height: 95px;
+    
+}
+
+#aboutUs:hover{
     cursor: pointer;
 
 }

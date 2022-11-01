@@ -1,24 +1,47 @@
-//document.addEventListener("DOMContentLoaded", function() {
+var firstVisit = localStorage.firstVisit != "1"; // Get & store current state (null/"1")
+localStorage.firstVisit = "1";  // Page is now visited so set to "1" regardless
+console.log(localStorage.firstVisit);
+jQuery(function($){
+  var $superman = $("#superman"); // Use rather an ID. It's faster!
+  var $logoPic = $("#logoPic");
+  var $logoGif = $("#logoGif");
+
+  $superman.css({display: firstVisit ? "block" : "none"}); // Hide spin. if not first visit
+
+  if( firstVisit ) {            // First time on page
+    $(window).load(function() { // P.S: does not applies to unloaded images and media
+       console.log("firstVisit");
+     //  $superman.css("display", "block");
+       $logoPic.css("display", "none");
+       $logoGif.css("display", "none");
+      setTimeout(getLogo, 4300);//starts counting from loaded
+    });
+  }
+  else{
+    console.log("not first time");
+    $logoPic.css("display", "block");
+  }
+});
+
+
+
+document.getElementById("logoPic").style.display="none";
+setTimeout(getHomePage, 7500);//starts counting from loaded
+function getHomePage(){//we nee to make this thing wait or make the loading generic enough that it doesn't have to
+  console.log("hi");
+    document.getElementById("loading").style.display="none";
+    window.location.href = "Pages/CallToAction.html";
+}//*/
+
 
 document.getElementById("logoGif").style.display="none";
-function backflip(e){
-    e.style.display="none";
-    document.getElementById("logoGif").style.display="block";
-    setTimeout(resetLogo, 3400);
+setTimeout(getLogo, 4300);//starts counting from loaded
+
+function getLogo(){//we nee to make this thing wait or make the loading generic enough that it doesn't have to
+
+   document.getElementById("logoPic").style.display="block";
+   document.getElementById("superman").style.display="none";
 }
-
-function resetLogo(){
-    document.getElementById("logoPic").style.display="block";
-    document.getElementById("logoGif").style.display="none";
-}
-
-
-<<<<<<< Updated upstream
-
-function Tertius() {
-  document.getElementById("headingTeamMember").innerHTML = "Tertius";
-  document.getElementById("paragraphTeamMember").innerHTML = "Tertius is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ;alskjf;laskdjflaskjdlsakjfdkjkdjffffffffffffffffflskdjflaksjdflaksdjflaksdfasdfasdfasasdfakjsdfkahdfklajdfhlkajsdfh ajklsdfhlakd akljdhfalk sjdfha askjdfhklasjdfh ahklsjdfhlak haskdjfhaksjdfhakjd aksdjfhskj jdjdjd kajsdfhlakjsdfhklasjdfhal kajsdfhasdf";
-=======
 // portraits
 function highlightTertius(){
  
@@ -29,16 +52,17 @@ function highlightTertius(){
  document.getElementById("Tertius").style.filter = "brightness(100%)";
 
  document.getElementById("headingTeamMember").innerHTML = "Tertius";
-  document.getElementById("paragraphTeamMember").innerHTML = "Tertius is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident";
->>>>>>> Stashed changes
+  document.getElementById("paragraphTeamMember").innerHTML = "Tertius is the best at what he does. He loves solving someone's coding issues and fixing it till perfection. He always focuses on the best solution for his projects and nothing will stop him from achieving that, unless Angela gives him a better one.";
+
   document.getElementById("Tertius").src="../Media/TertiusPicColour.png";
-  document.getElementById("Tertius").style.width="149px";
+  //document.getElementById("Tertius").style.width="149px";
 
   document.getElementById("Francois").src="../Media/FrancoisPic.png";
   document.getElementById("Angela").src="../Media/AngelaPic.png";
   document.getElementById("Jay").src="../Media/JayPic.png";
   document.getElementById("James").src="../Media/JamesPic.png";
 }
+
 function highlightAngela(){
  
   document.getElementById("James").style.filter = "brightness(60%)";
@@ -49,6 +73,7 @@ function highlightAngela(){
 
   document.getElementById("headingTeamMember").innerHTML = "Angela";
   document.getElementById("paragraphTeamMember").innerHTML = "Angela loves being part of this team as she can put all her ideas into many different types of projects. Cool functions and interactions are her go to for front end development. She is fun loving and excited to turn all your dreams into reality! P.S There are also women in StackMan!";
+
  document.getElementById("Angela").src="../Media/AngelaPicColour.png";
 
 document.getElementById("Tertius").src="../Media/TertiusPic.png";
@@ -56,6 +81,7 @@ document.getElementById("Tertius").src="../Media/TertiusPic.png";
   document.getElementById("Jay").src="../Media/JayPic.png";
   document.getElementById("James").src="../Media/JamesPic.png";
 }
+
 function highlightJay(){
  
   document.getElementById("James").style.filter = "brightness(60%)";
@@ -65,7 +91,8 @@ function highlightJay(){
  document.getElementById("Jay").style.filter = "brightness(100%)";
 
  document.getElementById("headingTeamMember").innerHTML = "Jay";
-  document.getElementById("paragraphTeamMember").innerHTML = "Jay is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident";
+  document.getElementById("paragraphTeamMember").innerHTML = "Jay is the computer scientist of our company. He secretly whishes he can design more things because his design is almost better than everyone's elses. He remains the head of our computer science department with a proud smile.";
+
   document.getElementById("Jay").src="../Media/JayPicColour.png";
   //document.getElementById("Jay").style.width="151px";
 
@@ -74,6 +101,7 @@ function highlightJay(){
   document.getElementById("Angela").src="../Media/AngelaPic.png";
   document.getElementById("James").src="../Media/JamesPic.png";
 }
+
 function highlightJames(){
  
   document.getElementById("Jay").style.filter = "brightness(60%)";
@@ -83,15 +111,17 @@ function highlightJames(){
  document.getElementById("James").style.filter = "brightness(100%)";
 
  document.getElementById("headingTeamMember").innerHTML = "James";
-  document.getElementById("paragraphTeamMember").innerHTML = "James is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident";
+
+  document.getElementById("paragraphTeamMember").innerHTML = "James has a bit of a work addiction. He will not stop until the project is nothing short from perfect. He loves back end-development, always making everyone else feel a bit behind with their outdated software. Nobody is secretly as good as James in design, although he might try to make you think otherwise.";
   document.getElementById("James").src="../Media/JamesPicColour.png";
-  document.getElementById("James").style.width="148px";
+  //document.getElementById("James").style.width="148px";
 
   document.getElementById("Tertius").src="../Media/TertiusPic.png";
   document.getElementById("Francois").src="../Media/FrancoisPic.png";
   document.getElementById("Jay").src="../Media/JayPic.png";
   document.getElementById("Angela").src="../Media/AngelaPic.png";
 }
+
 function highlightFrancois(){
  console.log("hi hover works ");
   document.getElementById("James").style.filter = "brightness(60%)";
@@ -101,7 +131,7 @@ function highlightFrancois(){
   document.getElementById("Francois").style.filter = "brightness(100%)";
 
   document.getElementById("headingTeamMember").innerHTML = "Francois";
-  document.getElementById("paragraphTeamMember").innerHTML = "Francois is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident";
+  document.getElementById("paragraphTeamMember").innerHTML = "Francois is a web-development specialist. He loves javascript and all the other interesting web app languages. Francois sometimes has more in common with the computer than anyone else but just because he speaks the language so well.";
   document.getElementById("Francois").src="../Media/FrancoisPicColour.png";
 
   document.getElementById("Tertius").src="../Media/TertiusPic.png";
@@ -109,6 +139,7 @@ function highlightFrancois(){
   document.getElementById("Jay").src="../Media/JayPic.png";
   document.getElementById("James").src="../Media/JamesPic.png";
 }
+
 
 
   var light = document.getElementById("Light"),

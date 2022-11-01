@@ -1,0 +1,36 @@
+
+#Message{
+    top: 300px;
+    margin: 0 auto;
+}
+
+#Message a{
+    color: #FF0035;
+}
+
+#Message button{
+    background-color: #FF0035;
+}
+
+#ContactUs{
+    top: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#ContactUs a{
+    color: #FF0035;
+}
+.container-fluid{
+    position: relative;
+    left:25%;
+}
+
+
+
+
+/* center which one you clicked on with animation */
+
+
+
+

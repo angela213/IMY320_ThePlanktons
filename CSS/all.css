@@ -237,6 +237,16 @@ footer {
   /*z-index: -1;*/
 }
 
+#ContactUs{
+    font-size: 20px;
+}
 
+label{
+    font-family: doctor soos;
+}
+
+button{
+    font-family: doctor soos;
+}
 
 

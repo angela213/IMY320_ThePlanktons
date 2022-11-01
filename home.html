@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Home page</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="../CSS/home.css">
+	  <link rel="stylesheet" href="../CSS/all.css">
+	  <link rel="stylesheet" href="../CSS/NavStyle.css">
+	  <link rel="apple-touch-icon" sizes="180x180" href="../Media/Images/favicon_io/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../Media/Images/favicon_io/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../Media/Images/favicon_io/favicon-16x16.png">
+      <link rel="manifest" href="../Media/Images/favicon_io/site.webmanifest">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+                    $(":root").css({"--projectsTop": "15%", "--projectsLeft": "84%", "--contactTop": "75%", "--contactLeft": "84%", "--homeTop": "45%", "--homeLeft": "92%"})
+        </script>
+        <img  id="superman" src="../Media/superman2.gif" alt="superman">
+		<div id="logo">
+			<img  id="logoBackDrop" src="../Media/logoBackDrop.png" alt="logoBackDrop">
+			<img  id="logoPic" onmouseover="backflip(this)" src="../Media/logoPic.png" alt="logoPic">
+			<img  id="logoGif" onmouseover="backflip(this)" src="../Media/backflip2.gif" alt="logoBackFlip">
+
+		</div>
+
+		<div class="container-fluid" class="navi">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <nav>
+                        <div class="circle">
+							<div id="home">Home</div>
+							<div id="contactUsNav">Contact Us</div>
+							<div id="projects">Projects</div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div> 
+        <img  id="arrow" src="../Media/arrow2.gif" alt="arrow">
+		<div class="page">
+		<content>
+			<div id= lightBlock>
+								<h1>Meet the Team!</h1>
+
+
+								<div id="lightDiv">
+									<img  id="LightStick" src="../Media/lightStick.png" alt="lightStick">
+									<img  id="Light" src="../Media/goodLight2.png" alt="spotLight">
+									<!--<img  id="Light" src="Media/justLight.png" alt="spotLight">-->
+									<!--<img  id="lightBeam" src="Media/lightBeam.png" alt="lightBeam">-->
+								</div>
+							    </br>
+								<div id="meetTeam" ><!--onmousemove="lightMove(event.clientX, event.clientY)"-->
+									
+									<div class="portraits"> <img  id="Tertius" src="../Media/TertiusPic.png"  onmouseover="highlightTertius()" alt="Tertius portrait"></div>
+									<div class="portraits"> <img  id="Francois" src="../Media/FrancoisPic.png" onmouseover="highlightFrancois()" alt="Francois portrait"></div>
+									<div class="portraits"> <img  id="Angela" src="../Media/AngelaPic.png" onmouseover="highlightAngela()" alt="Angela portrait"></div>
+									<div class="portraits"> <img  id="Jay" src="../Media/JayPic.png"  onmouseover="highlightJay()" alt="Jay portrait"></div>
+									<div class="portraits"> <img  id="James" src="../Media/JamesPic.png" onmouseover="highlightJames()"alt="James portrait"></div>
+								</div>
+
+			</div> <!--end of lightBlock-->
+
+							<div class="teamParagraph">
+								<h2 id="headingTeamMember"> </h2>
+								<p id="paragraphTeamMember"> </p>
+							</div>
+						</br>
+						
+							<h1>About us</h1>
+							<p>Our company StackMan is a content creation website. We have displayed a few of our previous projects in the <a href="Projects.html">projects</a> page for you to see. We work in broad spectrum of animation, 3d modelling, back end coding(java, php and c++), front end coding(javaScript, html and CSS) and game development in unity c#</p>
+						</br>
+					</br>
+		</content>
+	</div><!--page-->
+
+	<footer>
+	
+			
+			</br>
+		<p id="textFooter">
+				StackMan Content Creation Company
+			</br>
+			<a href="ContactUs.html">Contact Us</a> for any inquiries.
+		  </br>
+		   Find Us at
+		</p>
+			</br>
+				<ul id=socialLogos>
+				  <li><a href="https://instagram.com/9gag?igshid=YmMyMTA2M2Y="><img id="Instagram"  class="social" src="../Media/instagram.png"  alt="instagram link"></a></li>
+				  <li><a href="https://www.facebook.com/groups/962338700542248/"><img id="Facebook"  class="social" src="../Media/facebook.png"  alt="facebook link"></a></li>
+				  <li><a href="https://twitter.com/9GAG?s=20&t=nSRQ-gL6H6XC2a2H8BoJaw"><img id="Twitter" class="social" src="../Media/twitter.png"  alt="twitter link"></a></li>
+				</ul>
+	</footer>
+			
+	</body>
+
+
+	<script src="../JS/home.js"></script>
+	<script src="../JS/stickman.js"></script>
+	<script type="text/javascript" src="../JS/navbar.js"></script>
+</html>

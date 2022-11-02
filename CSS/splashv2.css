@@ -3,6 +3,7 @@
   src: url(../Media/Fonts/doctor_soos/Doctor_Soos_Light.ttf);
 }
 
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 
@@ -19,18 +20,20 @@ body {
 .heading h1 {
     font-family: Century Gothic;
     color: white;
-   
 }
 .takeAction{
-    font-family: doctor_soos;
-    font-size: 28px;
-    word-spacing: 10px;
+    font-family: "doctor_soos";
+    font-size: 24px;
+    word-spacing: 5px;
+    position: absolute;
+    left:33%;
+    top: -70%;
+
 }
-
-
 .heading h3 {
     color: wheat;
-    font-size: 20px;
+    font-size: 30px;
+    font-family: "doctor_soos";
 }
 
 body{
@@ -53,25 +56,45 @@ body{
      -webkit-transition:opacity 1500ms ease;
      z-index: 10;
 }
-
 .DrawnButton{
     position: absolute;
-    top: 40%;
+    top: 60%;
     width: 100%;
     margin: auto;
     text-align: center;
     align-content: center;
     opacity: 0;
     -webkit-transition:opacity 1500ms ease;
-} 
+}
+.DrawnButton .cont{
+    display: inline;
+}
 
-
-
+.cont a{
+   font-size:23px;
+   font-family: "doctor_soos";
+}
+#inside1{
+    position: absolute;
+    z-index: 12;
+    left: 20%;
+    top:18%;
+}
+#inside2{
+    position: absolute;
+    z-index: 12;
+    left: 47%;
+    top:18%;
+}
+#inside3{
+    position: absolute;
+    z-index: 12;
+    left: 75%;
+    top:18%;
+}
 #btn{
     padding-left: 5%;
 }
-
-
 /* this a div to fade stuff */
 div.hide{
    opacity:0;

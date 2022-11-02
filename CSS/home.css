@@ -54,6 +54,7 @@ a {
 .portraits img{
 
   padding: 5px;
+  padding-left: 5%;
   width: 15%;/*150px*/
 }
 
@@ -75,6 +76,7 @@ a {
 	/*margin-top:  205px;
     margin-left: 200px;*/
     margin-right: auto;
+    margin-left: 5%;
     width: 100%;
     /*width: 950px;*/
 	z-index: 8;

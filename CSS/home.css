@@ -84,15 +84,17 @@ a {
 	z-index: 20;
 }
 
-
 .teamParagraph{
 	margin-top: -3%;
 	/*margin-top:  400px;*/
 }
 
-
 /* light movement   */
 #Light {
     transform-origin:  64.5% 13%;/* x ytransform-origin: 67% 21%;  lower x is to the left higher y to the top*/
     touch-action: none;
+}
+#aboutUss{
+	position: relative;
+	z-index: 1000;
 }

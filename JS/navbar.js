@@ -110,15 +110,26 @@ $(document).ready(function(){
     projectsWidth = $("#projects").width();
     projectsHeight = $("#projects").height();
     
+    homeIsAnim = false;
+    contactUsNavIsAnim = false;
+    projectsIsAnim = false;
+
     //home
     $("#home").mouseover(function(){
         //console.log("hovered");
-        $("#home").animate({width: '200px', height:'150px', 'line-height': "150px"},200, "linear")
+        if(!homeIsAnim){
+            homeIsAnim = true;
+            $("#home").animate({width: '200px', height:'150px', 'line-height': "150px"},200, "linear");
+        }
         
     })
     $("#home").mouseout(function(){
         //console.log("unhovered");
         $("#home").animate({width: homeWidth, height: homeHeight, 'line-height': "95px"},200, "linear");
+        setTimeout(function(){
+            homeIsAnim = false;
+          }, 200);
+        
     });
     $("#home").click(function(){
         //alert("You clicked home!");
@@ -129,11 +140,17 @@ $(document).ready(function(){
     //contactUsNav
     $("#contactUsNav").mouseover(function(){
         //console.log("hovered");
-        $("#contactUsNav").animate({width: '200px', height:'150px', 'line-height': "150px"},200, "linear")
+        if(!contactUsNavIsAnim){
+            contactUsNavIsAnim = true;
+            $("#contactUsNav").animate({width: '200px', height:'150px', 'line-height': "150px"},200, "linear")
+        }
     });
     $("#contactUsNav").mouseout(function(){
         //console.log("unhovered");
         $("#contactUsNav").animate({width: contactUsNavWidth, height: contactUsNavHeight, 'line-height': "95px"},200, "linear");
+        setTimeout(function(){
+            contactUsNavIsAnim = false;
+          }, 200);
     });
     $("#contactUsNav").click(function(){
         //alert("You clicked home!");
@@ -144,11 +161,17 @@ $(document).ready(function(){
     //projects
     $("#projects").mouseover(function(){
         //console.log("hovered");
-        $("#projects").animate({width: '200px', height:'150px', 'line-height': "150px"},200, "linear")
+        if(!projectsIsAnim){
+            projectsIsAnim = true;
+            $("#projects").animate({width: '200px', height:'150px', 'line-height': "150px"},200, "linear")
+        }
     });
     $("#projects").mouseout(function(){
         //console.log("unhovered");
         $("#projects").animate({width: projectsWidth, height: projectsHeight, 'line-height': "95px"},200, "linear");
+        setTimeout(function(){
+            projectsIsAnim = false;
+          }, 200);
     });
     $("#projects").click(function(){
         //alert("You clicked home!");

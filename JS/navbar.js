@@ -23,9 +23,9 @@ function ChangeNav(clicked){
                 .animate({top: '15%', left:'84%'}, 200, "linear");
                 setTimeout(function(){
                     if("individualProj".length > 0){
-                        window.location.assign("../home.html");
+                        window.location.assign("../Pages/home.html");
                     }else{
-                        window.location.assign("../home.html");
+                        window.location.assign("../Pages/home.html");
                     }
                   }, 500);
             }
@@ -36,9 +36,9 @@ function ChangeNav(clicked){
                 .animate({top: '15%', left:'84%'}, 200, "linear");
                 setTimeout(function(){
                     if("individualProj".length > 0){
-                        window.location.assign("../ContactUs.html");
+                        window.location.assign("../Pages/ContactUs.html");
                     }else{
-                        window.location.assign("../ContactUs.html");
+                        window.location.assign("../Pages/ContactUs.html");
                     }
                   }, 500);
             }
@@ -61,9 +61,9 @@ function ChangeNav(clicked){
                 .animate({top: '75%', left:'84%'}, 200, "linear");
                 setTimeout(function(){
                     if("individualProj".length > 0){
-                        window.location.assign("../home.html");
+                        window.location.assign("../Pages/home.html");
                     }else{
-                        window.location.assign("../home.html");
+                        window.location.assign("../Pages/home.html");
                     }
                     //window.location.assign("home.html");
                   }, 500);
@@ -74,9 +74,9 @@ function ChangeNav(clicked){
                 .animate({top: '75%', left:'84%'}, 200, "linear");
                 setTimeout(function(){
                     if("individualProj".length > 0){
-                        window.location.assign("../ContactUs.html");
+                        window.location.assign("../Pages/ContactUs.html");
                     }else{
-                        window.location.assign("../ContactUs.html");
+                        window.location.assign("../Pages/ContactUs.html");
                     }
                   }, 500);
             }else if(clicked == "projects"){
@@ -92,13 +92,14 @@ function ChangeNav(clicked){
         }else if(math == 54){
             if(clicked == "projects"){
                 if("individualProj".length > 0){
-                    window.location.assign("../Projects.html");
+                    window.location.assign("../Pages/Projects.html");
                 }
             }
         }
 }
 
 $(document).ready(function(){
+    //console.log("Testing 123!");
     //variables for the navbar
     homeWidth = $("#home").width();
     homeHeight = $("#home").height();

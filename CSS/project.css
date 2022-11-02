@@ -207,6 +207,8 @@ a.projectLink {
   z-index: 2;
   width: 500px;
   height: 250px;
+  max-width: 500px;
+  max-height: 250px;
   /*background: rgba(217,217,217,1);
   /*opacity: 1;*/
   position: relative;

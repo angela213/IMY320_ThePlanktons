@@ -26,8 +26,8 @@ body {
     font-size: 24px;
     word-spacing: 5px;
     position: absolute;
-    left:33%;
-    top: -70%;
+    left:31%;
+    top: -90%;
 
 }
 .heading h3 {
@@ -58,7 +58,7 @@ body{
 }
 .DrawnButton{
     position: absolute;
-    top: 60%;
+    top: 70%;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -74,36 +74,16 @@ body{
    font-size:23px;
    font-family: "doctor_soos";
 }
-#inside1{
-    position: absolute;
-    z-index: 12;
-    left: 20%;
-    top:18%;
-}
-#inside2{
-    position: absolute;
-    z-index: 12;
-    left: 50%;
-    top:18%;
-}
-#inside3{
-    position: absolute;
-    z-index: 12;
-    left: 75%;
-    top:18%;
-}
+
 #btn{
     padding-left: 5%;
-
-
 }
-
 #header3{
     font-size: 40px;
 }
 
 .takeAction p{
-    font-size: 30px;
+    font-size: 25px;
 }
 .DrawnButton a img{
     width: 20%;

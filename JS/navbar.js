@@ -22,11 +22,7 @@ function ChangeNav(clicked){
                 $("#projects").animate({top: '90%', left:'60%'}, 200, "linear").animate({top: '5%', left:'78%'}, 0, "linear")
                 .animate({top: '15%', left:'84%'}, 200, "linear");
                 setTimeout(function(){
-                    if("individualProj".length > 0){
-                        window.location.assign("../Pages/home.html");
-                    }else{
-                        window.location.assign("../Pages/home.html");
-                    }
+                    window.location.assign("home.html");
                   }, 500);
             }
             else if(clicked == "contactUsNav"){
@@ -35,10 +31,10 @@ function ChangeNav(clicked){
                 $("#home").animate({top: '90%', left:'60%'}, 200, "linear").animate({top: '5%', left:'78%'}, 0, "linear")
                 .animate({top: '15%', left:'84%'}, 200, "linear");
                 setTimeout(function(){
-                    if("individualProj".length > 0){
-                        window.location.assign("../Pages/ContactUs.html");
+                    if($("#individualProj").length > 0){
+                        window.location.assign("../ContactUs.html");
                     }else{
-                        window.location.assign("../Pages/ContactUs.html");
+                        window.location.assign("ContactUs.html");
                     }
                   }, 500);
             }
@@ -60,10 +56,10 @@ function ChangeNav(clicked){
                 $("#contactUsNav").animate({top: '5%', left:'60%'}, 200, "linear").animate({top: '90%', left:'78%'}, 0, "linear")
                 .animate({top: '75%', left:'84%'}, 200, "linear");
                 setTimeout(function(){
-                    if("individualProj".length > 0){
-                        window.location.assign("../Pages/home.html");
+                    if($("#individualProj").length > 0){
+                        window.location.assign("../home.html");
                     }else{
-                        window.location.assign("../Pages/home.html");
+                        window.location.assign("home.html");
                     }
                     //window.location.assign("home.html");
                   }, 500);
@@ -73,11 +69,7 @@ function ChangeNav(clicked){
                 $("#projects").animate({top: '5%', left:'60%'}, 200, "linear").animate({top: '90%', left:'78%'}, 0, "linear")
                 .animate({top: '75%', left:'84%'}, 200, "linear");
                 setTimeout(function(){
-                    if("individualProj".length > 0){
-                        window.location.assign("../Pages/ContactUs.html");
-                    }else{
-                        window.location.assign("../Pages/ContactUs.html");
-                    }
+                    window.location.assign("ContactUs.html");
                   }, 500);
             }else if(clicked == "projects"){
                 $("#projects").animate({top: '45%', left:'92%'}, 400, "linear");
@@ -91,8 +83,11 @@ function ChangeNav(clicked){
             
         }else if(math == 54){
             if(clicked == "projects"){
-                if("individualProj".length > 0){
-                    window.location.assign("../Pages/Projects.html");
+                console.log($("#individualProj").length);
+                if($("#individualProj").length){
+                    window.location.assign("../Projects.html");
+                }else{
+                    //window.location.assign("../Projects.html");
                 }
             }
         }

@@ -196,7 +196,23 @@ ul{
     margin-left: 5%;
    
 }
-
+#telephone{
+    position: absolute;
+    width:11%;
+    left: 20%;
+    top:20%;
+    transform: rotate(-10deg);
+}
+#ringTelephone{
+    position: absolute;
+    width:17%;
+    left: 19%;
+    top:8.7%;
+    transform: rotate(-10deg);
+}
+.telephono{
+    z-index: 12;
+}
 
 /* center which one you clicked on with animation */
 

@@ -13,4 +13,13 @@ function resetLogo(){
 document.addEventListener('scroll', (e) => {
 	document.getElementById("arrow").style.display="none";
 });
-
+document.getElementById("ringTelephone").style.display="none";
+function ringTelephone(e){
+ 	e.style.display="none";
+    document.getElementById("ringTelephone").style.display="block";
+    setTimeout(resetTelephone, 4900);
+}
+function resetTelephone(){
+	document.getElementById("telephone").style.display="block";
+    document.getElementById("ringTelephone").style.display="none";
+}

@@ -1,3 +1,7 @@
+@font-face{
+  font-family: doctor_soos;
+  src: url(../Media/Fonts/doctor_soos/Doctor_Soos_Light.ttf);
+}
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 
@@ -16,13 +20,17 @@ body {
     color: white;
 }
 .takeAction{
-    font-family: Century Gothic;
-    font-size: 28px;
-    word-spacing: 10px;
+    font-family: "doctor_soos";
+    font-size: 20px;
+    word-spacing: 5px;
+    position: absolute;
+    left:35%;
+    top: -70%;
 }
 .heading h3 {
     color: wheat;
-    font-size: 20px;
+    font-size: 28px;
+    font-family: "doctor_soos";
 }
 
 body{
@@ -61,7 +69,7 @@ body{
 
 .cont a{
    font-size:23px;
-    font-family: Century Gothic;
+    font-family: "doctor_soos";
 }
 #inside1{
      position: absolute;

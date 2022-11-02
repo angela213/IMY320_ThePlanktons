@@ -1,3 +1,8 @@
+@font-face{
+  font-family: doctor_soos;
+  src: url(../Media/Fonts/doctor_soos/Doctor_Soos_Light.ttf);
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 
@@ -17,7 +22,7 @@ body {
    
 }
 .takeAction{
-    font-family: Century Gothic;
+    font-family: doctor_soos;
     font-size: 28px;
     word-spacing: 10px;
 }

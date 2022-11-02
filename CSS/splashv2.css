@@ -37,5 +37,19 @@ body{
     width: 50%;
     border-radius: 50%;
     display: inline-block;
-    /*opacity: 0.5;*/
+    opacity: 1;
+     -webkit-transition:opacity 1500ms ease;
+     z-index: 10;
+}
+
+.DrawnButton{
+    position: absolute;
+    left: 37%;
+    top: 37%;
+    z-index: 5;
+}
+
+/* this a div to fade stuff */
+div.hide{
+   opacity:0;
 }

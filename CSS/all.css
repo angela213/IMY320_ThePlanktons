@@ -54,7 +54,6 @@ body {
 	right:0;
 	padding:10px;
 }
-
 h1, h2, h3{
 
   font-family: "avocado2";
@@ -62,7 +61,6 @@ h1, h2, h3{
   /*  /*font-family: "Century Gothic"; */
  
 }
-
 p{
     font-family: "doctor_soos";
 }
@@ -161,7 +159,6 @@ a{
     height: 100px;
     text-align: center;
 }
-
 #projects text{
     position: relative;
     top: 40%;
@@ -211,6 +208,7 @@ nav{
 #socialLogos{
     margin-left:35%;
 }
+
 footer #socialLogos li{
     display: inline;
     margin-left:5%;

@@ -2,6 +2,8 @@
   font-family: doctor_soos;
   src: url(../Media/Fonts/doctor_soos/Doctor_Soos_Light.ttf);
 }
+
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 
@@ -26,6 +28,7 @@ body {
     position: absolute;
     left:33%;
     top: -70%;
+
 }
 .heading h3 {
     color: wheat;
@@ -91,7 +94,21 @@ body{
 }
 #btn{
     padding-left: 5%;
+
+
 }
+
+#header3{
+    font-size: 40px;
+}
+
+.takeAction p{
+    font-size: 30px;
+}
+.DrawnButton a img{
+    width: 20%;
+}
+
 /* this a div to fade stuff */
 div.hide{
    opacity:0;

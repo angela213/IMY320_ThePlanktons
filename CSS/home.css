@@ -24,6 +24,7 @@ a {
 }*/
 
 
+
 #lightDiv img{
 	display: block;
 }
@@ -54,14 +55,15 @@ a {
 .portraits img{
 
   padding: 5px;
-  padding-left: 5%;
+  /*padding-left: 5%;*/
+  z-index: 20;
   width: 15%;/*150px*/
 }
 
 .portraits{
 	display: inline;
 	margin: 10px;
-	z-index: 5;
+	z-index: 20;
 
 	position: relative;
 	top: -25px;
@@ -79,7 +81,7 @@ a {
     margin-left: 5%;
     width: 100%;
     /*width: 950px;*/
-	z-index: 8;
+	z-index: 20;
 }
 
 

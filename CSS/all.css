@@ -8,20 +8,15 @@ body {
     z-index: 20;
     bottom:10%;
 }
-
-
 @font-face{
 
   font-family: Inter;
   src: url(../Media/Fonts/Inter/Inter-VariableFont_slnt,wght.ttf);
 }
-
 @font-face{
   font-family: Nunito Sans;
   src: url(../Media/Fonts/Nunito_Sans/NunitoSans-Regular.ttf);
-
 }
-
 @font-face{
   font-family: avocado2;
   src: url(../Media/Fonts/avocado_2/avocado.ttf);
@@ -31,13 +26,6 @@ body {
   font-family: doctor_soos;
   src: url(../Media/Fonts/doctor_soos/Doctor_Soos_Light.ttf);
 }
-
-@font-face{
-  font-family: pumkins_halloween;
-  src: url(../Media/Fonts/pumkins_halloween/Pumkins_Halloween.ttf);
-}
-
-
 
 
 #logoBackDrop{

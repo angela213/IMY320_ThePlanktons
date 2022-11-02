@@ -21,15 +21,15 @@ body {
 }
 .takeAction{
     font-family: "doctor_soos";
-    font-size: 20px;
+    font-size: 24px;
     word-spacing: 5px;
     position: absolute;
-    left:35%;
+    left:33%;
     top: -70%;
 }
 .heading h3 {
     color: wheat;
-    font-size: 28px;
+    font-size: 30px;
     font-family: "doctor_soos";
 }
 
@@ -69,10 +69,10 @@ body{
 
 .cont a{
    font-size:23px;
-    font-family: "doctor_soos";
+   font-family: "doctor_soos";
 }
 #inside1{
-     position: absolute;
+    position: absolute;
     z-index: 12;
     left: 20%;
     top:18%;
@@ -96,6 +96,7 @@ body{
 div.hide{
    opacity:0;
 }
+
 div.unhide{
     opacity: 1;
 }

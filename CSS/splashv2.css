@@ -94,7 +94,21 @@ body{
 }
 #btn{
     padding-left: 5%;
+
+
 }
+
+#header3{
+    font-size: 40px;
+}
+
+.takeAction p{
+    font-size: 30px;
+}
+.DrawnButton a img{
+    width: 20%;
+}
+
 /* this a div to fade stuff */
 div.hide{
    opacity:0;

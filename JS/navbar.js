@@ -11,8 +11,8 @@ function ChangeNav(clicked){
 
         var homePos = parseInt($("#" + clicked + "").css("top"),10);
         var math = Math.round((homePos/windowHeight)*100);
-
-        console.log("Math: " + math);
+        console.log("homePos: " + homePos + " windowHeight: " + windowHeight + " math: " + math);
+        //console.log("Math: " + math);
 
         if(math == 18){
             console.log("1");
